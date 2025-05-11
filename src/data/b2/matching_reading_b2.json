@@ -1,0 +1,30 @@
+{
+  "id": "b2-matching-001",
+  "level": "b2",
+  "type": "matching",
+  "title": "B2 – Zuordnung: Gesellschaft und Beruf",
+  "paragraphs": [
+    { "id": "p1", "text": "Immer mehr Menschen arbeiten heute im Homeoffice, was neue Herausforderungen für die Kommunikation mit sich bringt.", "correctHeading": "a" },
+    { "id": "p2", "text": "Die Zahl der Online-Fortbildungen steigt, da viele Arbeitnehmer sich flexibel weiterbilden möchten.", "correctHeading": "b" },
+    { "id": "p3", "text": "Soziale Netzwerke beeinflussen die öffentliche Meinung zunehmend.", "correctHeading": "c" },
+    { "id": "p4", "text": "Nachhaltigkeit wird in vielen Unternehmen zu einem zentralen Thema der Unternehmenskultur.", "correctHeading": "d" },
+    { "id": "p5", "text": "In vielen Städten entstehen Co-Working-Spaces für kreative Arbeitsformen.", "correctHeading": "e" },
+    { "id": "p6", "text": "Digitalisierung verändert nicht nur Berufe, sondern auch das Lernen in Schulen.", "correctHeading": "f" },
+    { "id": "p7", "text": "Viele Jugendliche engagieren sich politisch über soziale Medien.", "correctHeading": "g" },
+    { "id": "p8", "text": "Flexible Arbeitszeitmodelle sorgen für bessere Vereinbarkeit von Beruf und Familie.", "correctHeading": "h" },
+    { "id": "p9", "text": "Globale Zusammenarbeit erfordert gute interkulturelle Kompetenzen.", "correctHeading": "i" },
+    { "id": "p10", "text": "Stressbewältigung wird in der modernen Arbeitswelt immer wichtiger.", "correctHeading": "j" }
+  ],
+  "headings": {
+    "a": "Homeoffice und Kommunikation",
+    "b": "Online-Weiterbildung",
+    "c": "Einfluss sozialer Medien",
+    "d": "Nachhaltigkeit im Unternehmen",
+    "e": "Kreative Arbeitsräume",
+    "f": "Digitalisierung des Lernens",
+    "g": "Politisches Engagement online",
+    "h": "Beruf und Familie",
+    "i": "Interkulturelle Zusammenarbeit",
+    "j": "Umgang mit Stress"
+  }
+}

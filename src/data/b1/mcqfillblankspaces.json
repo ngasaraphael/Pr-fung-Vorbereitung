@@ -1,0 +1,31 @@
+{
+  "id": "sprachbausteine-mc-b1-001",
+  "level": "b1",
+  "type": "sprachbausteine-multiple-choice",
+  "title": "Sprachbausteine Teil 1",
+  "text": "Liebe Karin,\nnach meinem Praktikum in Frankreich bin ich jetzt wieder zu Hause. Wie du ja weißt, wollte ich eigentlich nach Paris, ___21___ das hat dann leider nicht geklappt. Doch dann habe ich eine Stelle als Praktikant bei ___22___ Firma in Straßburg gefunden.\nDort ___23___ ich drei Monate geblieben. Die Arbeit war sehr ___24___ – ich musste schon um 8.00 Uhr im Büro sein –, hat mir aber ___25___ sehr gut gefallen.\nIch habe ___26___ dieser Zeit in verschiedenen Abteilungen gearbeitet und so nicht nur etwas über die Herstellung von Fernsehgeräten ___27___, sondern auch über deren Verkauf. Und die Kollegen, mit ___28___ ich meistens zu tun hatte, waren wirklich sehr nett!\nNach dem Praktikum habe ich noch zwei Wochen Urlaub bei ___29___ Freunden gemacht. Darüber erzähle ich ___30___ bald mehr – für heute muss ich Schluss machen.\nLiebe Grüße\nFritz",
+  "blanks": {
+    "21": "b",
+    "22": "c",
+    "23": "a",
+    "24": "b",
+    "25": "c",
+    "26": "b",
+    "27": "a",
+    "28": "b",
+    "29": "c",
+    "30": "a"
+  },
+  "options": {
+    "21": { "a": "aber", "b": "denn", "c": "sondern" },
+    "22": { "a": "eine", "b": "einer", "c": "ein" },
+    "23": { "a": "bin", "b": "habe", "c": "wurde" },
+    "24": { "a": "anstrengend", "b": "anstrengende", "c": "anstrengendes" },
+    "25": { "a": "trotzdem", "b": "wegen", "c": "weshalb" },
+    "26": { "a": "bis", "b": "in", "c": "nach" },
+    "27": { "a": "gelernt", "b": "lernen", "c": "lernte" },
+    "28": { "a": "den", "b": "denen", "c": "die" },
+    "29": { "a": "deine", "b": "deinen", "c": "meinen" },
+    "30": { "a": "dir", "b": "Ihnen", "c": "uns" }
+  }
+}

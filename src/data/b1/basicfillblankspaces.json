@@ -1,0 +1,38 @@
+[{
+  "id": "sprachbausteine-b1-001",
+  "level": "b1",
+  "type": "sprachbausteine",
+  "title": "Sprachbausteine Teil 2",
+  "text": "Sehr geehrter Herr Janosch,\nich habe Ihre Anzeige gelesen und interessiere mich sehr ___31___ Ihr Angebot. Ich möchte mit meiner Familie vom 10.–24. August in Österreich Urlaub machen und hätte deshalb ___32___ noch nähere Informationen.\nMeine Frau und mich interessiert ___33___ das Freizeitprogramm für Kinder, ___34___ wir 35 Kinder (3 und 8 Jahre) haben. Gibt es Schwimm- und Tenniskurse für Kinder und ___35___ ja, was kosten sie? In Ihrer Anzeige steht auch, dass Sie für die Unterkunft günstige Angebote für Kinder haben. Wie viel ___36___ wir pro Kind und Tag bezahlen?\nUnd ___37___ noch eine letzte Frage: ___38___ müssen wir Ihnen unsere definitive Nachricht schicken bzw. reservieren und wie ___39___ wir am besten reservieren, falls wir dies möchten?\nBitte schreiben Sie uns so bald wie möglich, ___40___ wir uns bald entscheiden können. Außerdem wären wir Ihnen sehr ___41___, wenn Sie uns einige Prospekte oder Bilder Ihrer Pension sowie der Umgebung zusenden würden.\nMit freundlichen Grüßen\nIhr Anton Müller",
+  "blanks": {
+    "31": "f",
+    "32": "g",
+    "33": "a",
+    "34": "c",
+    "35": "b",
+    "36": "h",
+    "37": "d",
+    "38": "j",
+    "39": "i",
+    "40": "e",
+    "41": "f"
+  },
+  "options": {
+    "a": "BESONDERS",
+    "b": "DA",
+    "c": "DAFÜR",
+    "d": "DAMALS",
+    "e": "DAMIT",
+    "f": "DANKBAR",
+    "g": "DESHALB",
+    "h": "FÜR",
+    "i": "GERNE",
+    "j": "KÖNNEN",
+    "k": "MIT",
+    "l": "MÜSSTEN",
+    "m": "SCHLIESSLICH",
+    "n": "WANN",
+    "o": "WENN"
+  }
+}
+]

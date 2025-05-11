@@ -1,0 +1,30 @@
+{
+  "id": "a2-matching-001",
+  "level": "a2",
+  "type": "matching",
+  "title": "A2 – Zuordnung: Alltagssituationen",
+  "paragraphs": [
+    { "id": "p1", "text": "Anna geht jeden Samstag mit ihrer Mutter auf den Markt, um frisches Gemüse zu kaufen.", "correctHeading": "a" },
+    { "id": "p2", "text": "Paul fährt mit dem Bus zur Arbeit und hört dabei gerne Musik.", "correctHeading": "b" },
+    { "id": "p3", "text": "Lena liest abends gerne Bücher, bevor sie ins Bett geht.", "correctHeading": "c" },
+    { "id": "p4", "text": "Tim trifft sich oft nach der Schule mit seinen Freunden im Park.", "correctHeading": "d" },
+    { "id": "p5", "text": "Julia hilft ihrem kleinen Bruder bei den Hausaufgaben.", "correctHeading": "e" },
+    { "id": "p6", "text": "Markus fährt am Wochenende mit dem Fahrrad durch die Natur.", "correctHeading": "f" },
+    { "id": "p7", "text": "Sabine telefoniert jeden Abend mit ihrer Großmutter.", "correctHeading": "g" },
+    { "id": "p8", "text": "Daniel kocht gerne einfache Rezepte mit frischen Zutaten.", "correctHeading": "h" },
+    { "id": "p9", "text": "Clara macht jeden Morgen Yoga, um fit zu bleiben.", "correctHeading": "i" },
+    { "id": "p10", "text": "Max besucht einmal pro Woche einen Deutschkurs.", "correctHeading": "j" }
+  ],
+  "headings": {
+    "a": "Einkaufen auf dem Markt",
+    "b": "Mit dem Bus zur Arbeit",
+    "c": "Abendliche Lesestunde",
+    "d": "Freunde treffen im Park",
+    "e": "Hilfe bei Hausaufgaben",
+    "f": "Radfahren in der Natur",
+    "g": "Telefonat mit Oma",
+    "h": "Einfaches Kochen",
+    "i": "Fit mit Yoga",
+    "j": "Deutsch lernen"
+  }
+}

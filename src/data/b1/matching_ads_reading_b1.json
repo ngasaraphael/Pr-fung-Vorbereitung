@@ -1,0 +1,80 @@
+{
+  "id": "b1-ads-matching-002",
+  "level": "b1",
+  "type": "matching-ads",
+  "title": "Lesen Teil 3 – Anzeigen zuordnen",
+  "ads": {
+    "a": {
+      "title": "Bong – Hong",
+      "description": "Asiatisches Spezialitäten-Restaurant. Leckere Gerichte zum Mitnehmen. Mo–Sa 11–22 Uhr. Keine Lieferung.",
+      "tags": ["Asiatisch", "Mitnehmen", "Restaurant"]
+    },
+    "b": {
+      "title": "Ristorante OLINDO",
+      "description": "Italienisches Restaurant mit täglich wechselndem Mittagsmenü. Fahrmöglichkeit zu Ihrem Hotel.",
+      "tags": ["Italienisch", "Mittagsmenü", "Hotel-Abholung"]
+    },
+    "c": {
+      "title": "Helmut Schwabe",
+      "description": "Versicherung für Jugendliche. Unterstützung bei Problemen mit Sprache, Schule oder Alltag.",
+      "tags": ["Versicherung", "Jugendliche", "Hilfe"]
+    },
+    "d": {
+      "title": "Sprachschule DEUTSCHfit",
+      "description": "Deutsch lernen für Anfänger und Fortgeschrittene. Muttersprachliche Lehrer. Auch Intensivkurse.",
+      "tags": ["Sprachkurs", "Deutsch", "Intensiv"]
+    },
+    "e": {
+      "title": "Nachhilfe PLUS",
+      "description": "Einzelnachhilfe in Mathematik, Deutsch, Englisch. Kompetente Lehrkräfte. Auch am Wochenende.",
+      "tags": ["Nachhilfe", "Mathematik", "Deutsch", "Englisch"]
+    },
+    "f": {
+      "title": "Fitness-Studio FIT & FUN",
+      "description": "Günstige Monatskarten. Geräte, Kurse und Sauna täglich geöffnet.",
+      "tags": ["Fitness", "Kurse", "Sauna"]
+    },
+    "g": {
+      "title": "Reisebüro Weltenbummler",
+      "description": "Pauschalreisen und individuelle Reiseberatung. Frühbucher-Rabatte.",
+      "tags": ["Reisen", "Beratung", "Rabatte"]
+    },
+    "h": {
+      "title": "Salon BEAUTYLINE",
+      "description": "Professionelle Kosmetikbehandlungen und Massagen für Männer und Frauen.",
+      "tags": ["Kosmetik", "Massagen", "Wellness"]
+    },
+    "i": {
+      "title": "Café am Markt",
+      "description": "Frühstück, Kaffee und Kuchen direkt am Marktplatz. Terrasse geöffnet.",
+      "tags": ["Café", "Frühstück", "Terrasse"]
+    },
+    "j": {
+      "title": "Kinderarztpraxis Dr. Müller",
+      "description": "Kinder- und Jugendmedizin, alle Kassen, Termine kurzfristig verfügbar.",
+      "tags": ["Kinderarzt", "Jugendmedizin", "Termine"]
+    },
+    "k": {
+      "title": "Autowerkstatt Schmidt",
+      "description": "Reparatur und Inspektion aller Automarken. Schneller Service.",
+      "tags": ["Autowerkstatt", "Reparatur", "Service"]
+    },
+    "l": {
+      "title": "Computerhilfe Sofort",
+      "description": "Schnelle Hilfe bei PC- und Internetproblemen zu Hause.",
+      "tags": ["Computerhilfe", "Internet", "Service"]
+    }
+  },
+  "situations": [
+    { "id": "s1", "text": "Sie möchten draußen frühstücken und Kaffee trinken.", "correctAd": "i" },
+    { "id": "s2", "text": "Sie suchen eine Werkstatt, die Ihr Auto schnell repariert.", "correctAd": "k" },
+    { "id": "s3", "text": "Sie möchten heute asiatisches Essen zum Mitnehmen bestellen.", "correctAd": "a" },
+    { "id": "s4", "text": "Ihr Kind ist krank und braucht dringend einen Termin beim Arzt.", "correctAd": "j" },
+    { "id": "s5", "text": "Ein französischer Freund möchte Deutsch lernen.", "correctAd": "d" },
+    { "id": "s6", "text": "Sie möchten ein italienisches Restaurant besuchen, das Sie vom Hotel abholt.", "correctAd": "b" },
+    { "id": "s7", "text": "Ihre Tochter braucht professionelle Unterstützung in Englisch.", "correctAd": "e" },
+    { "id": "s8", "text": "Sie interessieren sich für Probleme junger Menschen in Deutschland.", "correctAd": "c" },
+    { "id": "s9", "text": "Sie möchten regelmäßig ins Fitnessstudio gehen und auch eine Sauna benutzen.", "correctAd": "f" },
+    { "id": "s10", "text": "Sie planen einen Urlaub und wollen eine individuelle Beratung.", "correctAd": "g" }
+  ]
+}

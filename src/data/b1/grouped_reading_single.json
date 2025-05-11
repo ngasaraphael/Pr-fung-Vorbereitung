@@ -1,0 +1,133 @@
+
+{
+  "id": "reading-b1-002",
+  "level": "b1",
+  "type": "grouped-mcq",
+  "title": "Digitalisierung im Alltag",
+  "text": "In den letzten Jahren hat die Digitalisierung unser tägliches Leben stark verändert.\nViele Menschen nutzen heute digitale Geräte wie Smartphones, Tablets oder Laptops nicht nur bei der Arbeit,\nsondern auch in ihrer Freizeit. Nachrichten werden online gelesen, Kleidung wird über das Internet bestellt\nund mit Freunden kommuniziert man über soziale Netzwerke. Auch im Gesundheitsbereich hat sich vieles verändert.\nEs gibt Apps, die an die Einnahme von Medikamenten erinnern oder den Blutdruck messen können.\nÄltere Menschen profitieren besonders von diesen digitalen Hilfen, auch wenn sie sich oft erst an die neuen Technologien gewöhnen müssen.\n\nIm Berufsleben ist Digitalisierung nicht mehr wegzudenken. Viele Unternehmen ermöglichen Homeoffice, und Online-Meetings ersetzen oft persönliche Besprechungen. Dokumente werden in der Cloud gespeichert, was die Zusammenarbeit erleichtert.\nAllerdings müssen Arbeitnehmer den sicheren Umgang mit digitalen Tools lernen. Flexibilität und ständige Erreichbarkeit bringen aber auch Stress mit sich. Manche Menschen fühlen sich dadurch überfordert.\n\nEin weiteres wichtiges Thema ist der Datenschutz. Viele Nutzer machen sich Sorgen darüber, wie ihre persönlichen Daten verwendet werden. Deshalb ist es wichtig, über Risiken aufgeklärt zu werden und bewusst mit digitalen Medien umzugehen.\n\nAuch im Bildungsbereich schreitet die Digitalisierung voran. Schulen nutzen digitale Lernplattformen, um den Unterricht zu modernisieren. Schülerinnen und Schüler arbeiten zunehmend mit Tablets und digitalen Materialien.\nDie Digitalisierung bringt viele Chancen, aber auch Herausforderungen mit sich. Sie wird unser Leben auch in Zukunft stark beeinflussen.",
+
+  "questions": [
+    {
+      "id": "q1",
+      "question": "Was hat unser tägliches Leben stark verändert?",
+      "options": ["Die Politik", "Die Globalisierung", "Die Digitalisierung", "Die Ernährung"],
+      "answer": "Die Digitalisierung"
+    },
+    {
+      "id": "q2",
+      "question": "Was nutzen viele Menschen in ihrer Freizeit?",
+      "options": ["Papier und Stift", "Digitale Geräte", "Bücher", "Zeitungen"],
+      "answer": "Digitale Geräte"
+    },
+    {
+      "id": "q3",
+      "question": "Wie werden heute oft Nachrichten gelesen?",
+      "options": ["Gar nicht", "Im Radio", "Online", "In Magazinen"],
+      "answer": "Online"
+    },
+    {
+      "id": "q4",
+      "question": "Was kann eine Gesundheits-App tun?",
+      "options": ["Den Blutdruck messen", "Rezeptideen geben", "Kalorien zählen", "Rezepte drucken"],
+      "answer": "Den Blutdruck messen"
+    },
+    {
+      "id": "q5",
+      "question": "Welche Gruppe profitiert besonders von digitalen Gesundheits-Apps?",
+      "options": ["Jugendliche", "Kinder", "Ältere Menschen", "Sportler"],
+      "answer": "Ältere Menschen"
+    },
+    {
+      "id": "q6",
+      "question": "Was wird im Berufsleben durch Digitalisierung ersetzt?",
+      "options": ["Reisen", "Besprechungen", "Kantinenessen", "Urlaubstage"],
+      "answer": "Besprechungen"
+    },
+    {
+      "id": "q7",
+      "question": "Wo werden viele Dokumente gespeichert?",
+      "options": ["Im Büro", "In der Cloud", "In Ordnern", "Auf USB-Sticks"],
+      "answer": "In der Cloud"
+    },
+    {
+      "id": "q8",
+      "question": "Was müssen Arbeitnehmer lernen?",
+      "options": ["Schneller tippen", "Kochen", "Mit digitalen Tools umgehen", "Langsamer sprechen"],
+      "answer": "Mit digitalen Tools umgehen"
+    },
+    {
+      "id": "q9",
+      "question": "Was bringt die ständige Erreichbarkeit mit sich?",
+      "options": ["Motivation", "Erholung", "Stress", "Mehr Freizeit"],
+      "answer": "Stress"
+    },
+    {
+      "id": "q10",
+      "question": "Was ist ein wichtiges Thema im digitalen Zeitalter?",
+      "options": ["Essen", "Datenschutz", "Sport", "Fernsehen"],
+      "answer": "Datenschutz"
+    },
+    {
+      "id": "q11",
+      "question": "Was empfinden viele Nutzer bei der Verwendung digitaler Medien?",
+      "options": ["Vertrauen", "Unzufriedenheit", "Unsicherheit", "Langeweile"],
+      "answer": "Unsicherheit"
+    },
+    {
+      "id": "q12",
+      "question": "Was ist für einen bewussten Umgang mit digitalen Medien nötig?",
+      "options": ["Technisches Wissen", "Vorsicht und Information", "Gute Apps", "Alte Geräte"],
+      "answer": "Vorsicht und Information"
+    },
+    {
+      "id": "q13",
+      "question": "Wie reagieren Schulen auf die Digitalisierung?",
+      "options": ["Mit Ablehnung", "Mit neuen Lehrern", "Mit digitalen Plattformen", "Mit weniger Unterricht"],
+      "answer": "Mit digitalen Plattformen"
+    },
+    {
+      "id": "q14",
+      "question": "Womit arbeiten viele Schülerinnen und Schüler?",
+      "options": ["Mit Büchern", "Mit Tablets", "Mit Papier", "Mit Stiften"],
+      "answer": "Mit Tablets"
+    },
+    {
+      "id": "q15",
+      "question": "Was wird durch Digitalisierung im Unterricht erreicht?",
+      "options": ["Kürzere Pausen", "Mehr Hausaufgaben", "Modernisierung", "Weniger Lehrer"],
+      "answer": "Modernisierung"
+    },
+    {
+      "id": "q16",
+      "question": "Wie verändert Digitalisierung das Lernen?",
+      "options": ["Es wird uninteressant", "Es wird papierloser", "Es wird schwieriger", "Es wird langsamer"],
+      "answer": "Es wird papierloser"
+    },
+    {
+      "id": "q17",
+      "question": "Welche Herausforderung bringt Digitalisierung mit sich?",
+      "options": ["Mehr Freizeit", "Weniger Technik", "Technologische Überforderung", "Weniger Schüler"],
+      "answer": "Technologische Überforderung"
+    },
+    {
+      "id": "q18",
+      "question": "Was ersetzt persönliche Besprechungen im Job?",
+      "options": ["E-Mails", "Briefe", "Online-Meetings", "Telefonate"],
+      "answer": "Online-Meetings"
+    },
+    {
+      "id": "q19",
+      "question": "Was erleichtert die Zusammenarbeit im Beruf?",
+      "options": ["Cloud-Speicherung", "Papierdruck", "Regelmäßige Pausen", "Kaffeemaschinen"],
+      "answer": "Cloud-Speicherung"
+    },
+    {
+      "id": "q20",
+      "question": "Was bringt Digitalisierung mit sich?",
+      "options": ["Nur Vorteile", "Nur Nachteile", "Chancen und Herausforderungen", "Weniger Technik"],
+      "answer": "Chancen und Herausforderungen"
+    }
+  ]
+}
+
+

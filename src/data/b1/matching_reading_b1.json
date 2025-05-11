@@ -1,0 +1,70 @@
+{
+  "id": "b1-matching-001",
+  "level": "b1",
+  "type": "matching",
+  "title": "Überschriften zuordnen",
+  "paragraphs": [
+    {
+      "id": "p1",
+      "text": "Wer ist der typische Computernutzer? Das B.A.T.-Freizeitforschungsinstitut Hamburg ermittelte einige Eigenschaften: Er ist männlich, jung und hat einen hohen Schulabschluss.",
+      "correctHeading": "i"
+    },
+    {
+      "id": "p2",
+      "text": "\"BahnAktiv\" heißt ein 292-seitiger Prospekt, den die Deutsche Bahn AG jetzt veröffentlicht hat. Darin werden unter anderem interessante Ziele für Tourismus hervorgehoben. Die Deutsche Bahn will damit Menschen für Reisen mit dem Zug begeistern.",
+      "correctHeading": "j"
+    },
+    {
+      "id": "p3",
+      "text": "Immer mehr deutsche Familien entscheiden sich für Bahnreisen, weil sie kostengünstig und bequem sind. Besonders mit dem neuen Familien-Tarif der Bahn wird das Reisen günstiger.",
+      "correctHeading": "a"
+    },
+    {
+      "id": "p4",
+      "text": "Ein neues Buch mit dem Titel „Schlafen lernen“ bietet Tipps und Methoden zur besseren Nachtruhe. Es enthält viele praktische Übungen gegen Schlaflosigkeit.",
+      "correctHeading": "b"
+    },
+    {
+      "id": "p5",
+      "text": "Laut einer aktuellen Studie ist der Computer das beliebteste Hobby unter deutschen Frauen. Besonders Spiele und soziale Netzwerke stehen im Mittelpunkt.",
+      "correctHeading": "c"
+    },
+    {
+      "id": "p6",
+      "text": "Die Bahn bietet ab sofort spezielle Informationen für Radfahrer an. Neue Broschüren zeigen die besten Verbindungen für Radreisen durch Deutschland.",
+      "correctHeading": "d"
+    },
+    {
+      "id": "p7",
+      "text": "Viele Urlauber entscheiden sich für Fahrradreisen innerhalb Deutschlands. Es gibt zahlreiche Radrouten mit Übernachtungsmöglichkeiten für Familien.",
+      "correctHeading": "g"
+    },
+    {
+      "id": "p8",
+      "text": "Kulturveranstaltungen sind bei verschiedenen Altersgruppen unterschiedlich beliebt. Jüngere Menschen besuchen Konzerte, ältere bevorzugen Theater und Museen.",
+      "correctHeading": "h"
+    },
+    {
+      "id": "p9",
+      "text": "In Apotheken gibt es neue Schlaftabletten zu einem besonders günstigen Preis. Die Nachfrage nach solchen Produkten steigt stetig.",
+      "correctHeading": "e"
+    },
+    {
+      "id": "p10",
+      "text": "Die Bahn senkt ihre Preise für Familien. Mit einem speziellen Ticketangebot können Kinder kostenlos mitreisen.",
+      "correctHeading": "f"
+    }
+  ],
+  "headings": {
+    "a": "Immer mehr deutsche Familien reisen mit der Bahn",
+    "b": "Buchtipp: Hilfe bei Schlafproblemen",
+    "c": "Der Computer: Liebstes Hobby von Deutschlands Frauen",
+    "d": "Neu bei der Bahn: Spezielle Informationen und Angebote für Radfahrer",
+    "e": "Neu am Markt: Billige Schlaftabletten",
+    "f": "Familien reisen billiger",
+    "g": "Urlaub mit dem Fahrrad in Deutschland immer beliebter",
+    "h": "Kultur im Urlaub: Interessen je nach Alter unterschiedlich",
+    "i": "Umfrage: Wer verwendet den Computer am häufigsten?",
+    "j": "Deutschland: Immer mehr Touristen reisen in den Westen"
+  }
+}

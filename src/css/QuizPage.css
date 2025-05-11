@@ -1,0 +1,240 @@
+.quiz-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
+.quiz-container h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.question-block {
+  margin-bottom: 2rem;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 1rem;
+}
+
+.question-block p {
+  font-weight: bold;
+  font-size: 1.1rem;
+  margin-bottom: 0.75rem;
+}
+
+.reading-text {
+  background-color: #f9f9f9;
+  border-left: 4px solid #167174;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  font-style: italic;
+  line-height: 1.6;
+}
+
+/*MatchingAdsReading*/
+
+
+.matching-headings {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  justify-content: center;
+}
+
+.matching-headings .heading-card {
+  background-color: #f0f0f0;
+  padding: 1rem;
+  border-radius: 10px;
+  width: 140px;
+  min-height: 100px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.heading-card strong {
+  font-size: 1.2rem;
+  color: #333;
+  margin-bottom: 0.3rem;
+}
+
+.heading-card span {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+/*MatchingAdsReading*/
+
+/* MCQ options */
+.option-label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+/* Satzbau buttons */
+.fragment-button {
+  padding: 0.5rem 1rem;
+  margin: 0.3rem;
+  font-size: 0.9rem;
+  border: 1px solid #ccc;
+  background-color: #f2f2f2;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.fragment-button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.reset-button {
+  margin-top: 0.5rem;
+  background-color: #ffdddd;
+  border: none;
+  padding: 0.4rem 0.8rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.submit-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 1.5rem;
+  justify-items: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+
+
+/* Submit & Results */
+.submit-button {
+  background-color: #167174;
+  color: white;
+  font-size: 1.1rem;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  width: 140px;
+}
+
+.result-box {
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 1.3rem;
+}
+
+/* Timer at the top of the exam page */
+.exam-timer {
+  font-size: 1.4rem;
+  background-color: #fff8e1;
+  padding: 0.5rem 1rem;
+  border-left: 6px solid #f9a825;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  border-radius: 6px;
+}
+
+/* Section heading */
+.section-header {
+  background-color: #e3f2fd;
+  border-left: 6px solid #2196f3;
+  padding: 0.6rem 1rem;
+  margin: 2rem 0 1rem;
+  border-radius: 6px;
+  font-weight: bold;
+  color: #0d47a1;
+  font-size: 1.1rem;
+}
+
+.result-box {
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 1.3rem;
+  padding: 1.5rem;
+  border-radius: 8px;
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.result-pass {
+  background-color: #e8f5e9;
+  border-left: 6px solid #4caf4f77;
+  color: #2e7d32;
+}
+
+.result-fail {
+  background-color: #ffebee;
+  border-left: 6px solid #f4433683;
+  color: #c62828;
+}
+
+button {
+  transition: all 0.2s ease;
+}
+
+button:hover {
+  transform: scale(1.03);
+  opacity: 0.9;
+}
+
+
+
+
+/* Media Queries */
+@media (max-width: 400px) {
+  .quiz-container h2 {
+    font-size: 1.6rem;
+  }
+  .question-block p {
+    font-size: 1rem;
+  }
+  .option-label,
+  .fragment-button {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 300px) {
+  .quiz-container h2 {
+    font-size: 1.4rem;
+  }
+  .option-label,
+  .fragment-button {
+    font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 200px) {
+  .quiz-container h2 {
+    font-size: 1.2rem;
+  }
+  .option-label,
+  .fragment-button,
+  .reset-button,
+  .submit-button {
+    font-size: 0.75rem;
+    padding: 0.4rem;
+  }
+}
+
+@media (max-width: 150px) {
+  .quiz-container h2 {
+    font-size: 1rem;
+  }
+  .option-label,
+  .fragment-button,
+  .reset-button,
+  .submit-button {
+    font-size: 0.65rem;
+    padding: 0.3rem;
+  }
+}

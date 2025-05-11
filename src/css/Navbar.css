@@ -1,0 +1,189 @@
+.navbar-links li {
+  padding: 0.4rem 0.6rem;
+}
+
+
+.navbar-logo {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.navbar-links a svg {
+        font-size: 28px;
+    }
+
+
+.navbar {
+  background-color: #167174;
+  color: white;
+  padding: 0.2rem 1rem;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar-controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1.5rem;
+  width: 100%;
+}
+
+.navbar-links {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+.navbar-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.1rem;
+  display: flex;
+  align-items: center;
+}
+
+.navbar-links a svg {
+  margin-right: 6px;
+}
+
+.navbar-links a.active {
+  border-bottom: 3px solid #07ee0e;
+  font-weight: bold;
+}
+
+.level-label {
+  font-size: 1.05rem;
+}
+
+
+
+.level-label select {
+  padding: 0.25rem 0.5rem;
+  font-size: 1rem;
+  border-radius: 4px;
+  border: none;
+  outline: none;
+}
+
+/* -------------------- */
+/* 📱 Responsive tweaks */
+/* -------------------- */
+
+@media (max-width: 700px) {
+
+  .level-label {
+  font-size: 1.05rem;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  width: 90px !important;
+}
+
+  .navbar {
+    padding: 0.2rem;
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .navbar-logo {
+    display: none;
+  }
+
+  .navbar-controls {
+
+    align-items: center;
+    width: 100%;
+    gap: 0.75rem;
+  }
+
+  .navbar-links {
+  width: 100%;
+  gap: 0.5rem;
+  justify-content: flex-start; /* 👈 push items to the left */
+  padding-left: 0.5rem; /* optional: reduce padding if any */
+}
+
+
+    .navbar-links a svg {
+        font-size: 24px;
+    }
+
+
+  .level-label {
+    font-size: 1rem;
+    width: 100%;
+    text-align: center;
+  }
+
+  .navbar-links {
+    width: 100%;
+    gap: 0.5rem;
+   
+  }
+
+  .navbar-links a {
+    flex-direction: column-reverse; /* puts text above icon */
+    font-size: 16px;
+    align-items: center;
+  }
+
+  .navbar-links a svg {
+    margin: 0;
+  }
+}
+
+@media (max-width: 400px) {
+  .navbar-links a {
+    font-size: 14px;
+  }
+
+.level-label {
+
+  width: 60px !important;
+}
+
+
+  .navbar-links a svg {
+        font-size: 20px;
+    }
+
+
+  .level-label {
+    font-size: 0.9rem;
+  }
+
+  .level-label select {
+    font-size: 0.85rem;
+  }
+}
+
+
+@media (max-width: 340px) {
+  .navbar-links a {
+    font-size: 14px;
+  }
+
+  .navbar-links li {
+  padding: 0.4rem 0.2rem;
+}
+
+
+  .navbar-links a svg {
+        font-size: 18px;
+    }
+
+
+  .level-label {
+    font-size: 0.8rem;
+  }
+
+  .level-label select {
+    font-size: 0.8rem;
+  }
+}
+

@@ -1,0 +1,82 @@
+[
+  {
+    "id": "a2-1",
+    "type": "mcq",
+    "question": "Was macht Lisa am Wochenende?",
+    "audio": "/audio/a2/audio1.mp3",
+    "options": ["Sie arbeitet", "Sie fährt ans Meer", "Sie besucht ihre Oma", "Sie bleibt zu Hause"],
+    "answer": "Sie besucht ihre Oma"
+  },
+  {
+    "id": "a2-2",
+    "type": "mcq",
+    "question": "Wo findet das Treffen statt?",
+    "audio": "/audio/a2/audio2.mp3",
+    "options": ["Im Büro", "Im Park", "In der Schule", "Im Restaurant"],
+    "answer": "Im Park"
+  },
+  {
+    "id": "a2-3",
+    "type": "mcq",
+    "question": "Was braucht der Mann?",
+    "audio": "/audio/a2/audio3.mp3",
+    "options": ["Einen Stift", "Ein Buch", "Ein Ticket", "Eine Fahrkarte"],
+    "answer": "Eine Fahrkarte"
+  },
+  {
+    "id": "a2-4",
+    "type": "mcq",
+    "question": "Wann beginnt der Kurs?",
+    "audio": "/audio/a2/audio4.mp3",
+    "options": ["Um 9 Uhr", "Um 10 Uhr", "Um 11 Uhr", "Um 14 Uhr"],
+    "answer": "Um 10 Uhr"
+  },
+  {
+    "id": "a2-5",
+    "type": "mcq",
+    "question": "Wohin fährt Anna?",
+    "audio": "/audio/a2/audio5.mp3",
+    "options": ["Nach Berlin", "Nach Köln", "Nach München", "Nach Hamburg"],
+    "answer": "Nach München"
+  },
+  {
+    "id": "a2-6",
+    "type": "mcq",
+    "question": "Was isst der Junge?",
+    "audio": "/audio/a2/audio6.mp3",
+    "options": ["Pizza", "Spaghetti", "Ein Sandwich", "Einen Apfel"],
+    "answer": "Pizza"
+  },
+  {
+    "id": "a2-7",
+    "type": "mcq",
+    "question": "Was kauft die Frau im Supermarkt?",
+    "audio": "/audio/a2/audio7.mp3",
+    "options": ["Milch", "Käse", "Brot", "Butter"],
+    "answer": "Milch"
+  },
+  {
+    "id": "a2-8",
+    "type": "mcq",
+    "question": "Wie spät ist es?",
+    "audio": "/audio/a2/audio8.mp3",
+    "options": ["Viertel vor neun", "Halb zehn", "Viertel nach acht", "Punkt neun"],
+    "answer": "Halb zehn"
+  },
+  {
+    "id": "a2-9",
+    "type": "mcq",
+    "question": "Was macht Peter nach der Arbeit?",
+    "audio": "/audio/a2/audio9.mp3",
+    "options": ["Er geht ins Kino", "Er kocht", "Er schläft", "Er liest ein Buch"],
+    "answer": "Er geht ins Kino"
+  },
+  {
+    "id": "a2-10",
+    "type": "mcq",
+    "question": "Wen ruft Maria an?",
+    "audio": "/audio/a2/audio10.mp3",
+    "options": ["Ihre Mutter", "Ihren Chef", "Ihre Freundin", "Ihren Bruder"],
+    "answer": "Ihre Mutter"
+  }
+]
