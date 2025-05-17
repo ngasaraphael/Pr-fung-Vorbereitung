@@ -1,17 +1,17 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import { LevelProvider } from './context/LevelContext';
-import MCQFillBlanksQuiz from './pages/MCQFillBlanksQuiz';
+import MCQFillBlanksQuiz from './pages/SprachbausteineTeil1';
 
 import HomePage from './pages/HomePage';
 import QuizPage from './pages/ReadingQuizPage';
 import ExamPage from './pages/ExamPage';
 import ProfilePage from './pages/ProfilePage';
 import CommunityPage from './pages/CommunityPage';
-import GroupedReadingQuiz from './pages/GroupedReadingQuiz';
-import MatchingReadingQuiz from './pages/MatchingReadingQuiz';
-import MatchingAdQuiz from './pages/MatchingAdsReadingQuiz';
-import FillInTheBlanksQuiz from './pages/FillInTheBlanksQuiz';
+import GroupedReadingQuiz from './pages/LeseverstehenTeil2';
+import MatchingReadingQuiz from './pages/LeseverstehenTeil1';
+import MatchingAdQuiz from './pages/LeseverstehenTeil3';
+import FillInTheBlanksQuiz from './pages/SprachbausteineTeil2';
 
 
 

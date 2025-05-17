@@ -19,36 +19,40 @@ function HomePage() {
       <p>Wähle einen Abschnitt:</p>
 
         <div className="card-container">
-          <div className="card reading" onClick={() => handleNavigate('reading')}>
+          <div className="card" onClick={() => handleNavigate('reading-matching')}>
+            <FaPuzzlePiece className="card-icon" />
+            <div>Leseverstehen Teil 1</div>
+          </div>
+          <div className="card" onClick={() => navigate('/quiz/reading-long')}>
+            <FaBookOpen className="card-icon" />Leseverstehen Teil 2
+          </div>
+          <div className="card" onClick={() => handleNavigate('reading-ads')}>
+            <FaTags className="card-icon" />
+            <div>Leseverstehen Teil 3</div>
+          </div>
+           <div className="card " onClick={() => handleNavigate('sprachbausteine-mcq')}>
+            <FaPenFancy className="card-icon" />
+            Sprachbausteine Teil 1
+          </div>
+          
+          <div className="card" onClick={() => handleNavigate('fill-blanks')}>
+            <FaKeyboard className="card-icon" />
+            Sprachbausteine Teil 2
+          </div>
+          <div className="card" onClick={() => handleNavigate('reading')}>
             <FaBook className="card-icon" />
             <div>Lesen</div>
           </div>
-          <div className="card group-reading" onClick={() => navigate('/quiz/reading-long')}>
-            <FaBookOpen className="card-icon" /> Leseverstehen (Langtext)
-          </div>
-          <div className="card reading-ads-matching" onClick={() => handleNavigate('reading-ads')}>
-            <FaTags className="card-icon" />
-            <div>Lesen – Anzeigen Zuordnen</div>
-          </div>
-          <div className="card fill-blanks" onClick={() => handleNavigate('fill-blanks')}>
-            <FaKeyboard className="card-icon" />
-            Sprachbausteine (Lücken)
-          </div>
-          <div className="card mcqfill-blanks" onClick={() => handleNavigate('sprachbausteine-mcq')}>
-            <FaPenFancy className="card-icon" />
-            Sprachbausteine – Auswahl
-          </div>
-          <div className="card card-matching" onClick={() => handleNavigate('reading-matching')}>
-            <FaPuzzlePiece className="card-icon" />
-            <div>Lesen – Zuordnung</div>
-          </div>
+
+      
+
           
 
-          <div className="card listening" onClick={() => handleNavigate('listening')}>
+          <div className="card " onClick={() => handleNavigate('listening')}>
             <FaHeadphones className="card-icon" />
             <div>Hören</div>
           </div>
-          <div className="card satzbau" onClick={() => handleNavigate('satzbau')}>
+          <div className="card " onClick={() => handleNavigate('satzbau')}>
             <FaCubes className="card-icon" />
             <div>Satzbau</div>
           </div>

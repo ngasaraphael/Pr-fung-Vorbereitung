@@ -60,24 +60,35 @@ function MatchingReadingQuiz() {
         <Confetti width={width} height={height} numberOfPieces={250} />
       )}
 
-      <h2>{data.title}</h2>
+      <h2>Leseverstehen Teil 1</h2>
+      <p className='instructions' >Lesen Sie die Überschriften a–j und die Texte 1–5. Finden Sie für jeden Text die passende Überschrift.
+        Sie können jede Überschrift nur einmal benutzen.
+        Markieren Sie Ihre Lösungen für die Aufgaben 1–5 auf dem Antwortbogen.</p>
+          <div className="matching-headings-MRQ">
+            <ul className="no-bullets">
+              {Object.entries(data.headings).map(([key, text]) => (
+                <li key={key} className="li-row">
+                  <span className="key-label">{key}</span>
+                  <span className="grey-background">{text}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
 
-      <div className="matching-headings">
-        <h4>Überschriften</h4>
-        <ul>
-          {Object.entries(data.headings).map(([key, text]) => (
-            <li key={key}><strong>{key}</strong>: {text}</li>
-          ))}
-        </ul>
-      </div>
 
       {data.paragraphs.map((para, idx) => (
-        <div key={para.id} className="question-block">
-          <p><strong>Text {idx + 1}:</strong> {para.text}</p>
+        <div key={para.id} className="question-block-MRQ">
+          <ul className="no-bullets">
+            <li className="li-row">
+              <span className="key-label"><strong>{idx + 1}</strong></span>
+              <span className="grey-background">{para.text}</span>
+            </li>
+          </ul>
           <select
             value={userMatches[para.id] || ''}
             onChange={(e) => handleSelect(para.id, e.target.value)}
             disabled={showResults}
+            className='answer-dropdown'
           >
             <option value="">-- auswählen --</option>
             {Object.keys(data.headings).map((key) => (

@@ -6,34 +6,98 @@
 }
 
 .quiz-container h2 {
-  text-align: center;
+
   font-size: 2rem;
   margin-bottom: 1rem;
 }
 
-.question-block {
+.instructions{
+  font-style: italic;
+}
+
+.title{
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 0;
+  margin-bottom: 4px;
+}
+
+.subtitle{
+font-weight: bold;
+}
+
+
+.question-block-MRQ {
   margin-bottom: 2rem;
   border-bottom: 1px solid #ddd;
   padding-bottom: 1rem;
 }
 
-.question-block p {
+ .question-block-MRQ ul.no-bullets {
+  list-style-type: none;
+  padding-left: 0;
+  margin: 0; /* optional: remove extra spacing */
+}
+
+.question-block-MRQ .li-row {
+  display: flex;
+  align-items: flex-start;
+}
+
+.question-block-MRQ .key-label {
+  flex-shrink: 0;
+  margin-right: 8px;
   font-weight: bold;
-  font-size: 1.1rem;
-  margin-bottom: 0.75rem;
+}
+
+.question-block-MRQ .grey-background {
+  background-color: #f0f0f0;
+  flex: 1;
+  padding: 2px 4px;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.question-block-LT3 {
+  margin-bottom: 1rem;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 1rem;
+}
+
+
+.question-block-ST1 {
+  display: flex;
+  align-items: baseline;
+}
+
+.question-block-ST1 p{
+  margin-right: 4px;
+}
+.situation-LT3{
+  margin-bottom: 0px;
+}
+
+.answer-dropdown{
+  margin-left: 16px;
+  margin-top: 4px;
+  border: 1px solid turquoise;
+  border-radius: 4px;
 }
 
 .reading-text {
-  background-color: #f9f9f9;
-  border-left: 4px solid #167174;
+  background-color: #f0f0f0;
   padding: 1rem;
   margin-bottom: 1rem;
-  font-style: italic;
   line-height: 1.6;
 }
 
-/*MatchingAdsReading*/
 
+.AnswerST1{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content:
+}
 
 .matching-headings {
   display: flex;
@@ -41,6 +105,52 @@
   gap: 1rem;
   margin-bottom: 2rem;
   justify-content: center;
+}
+
+.matching-headings-MRQ {
+margin: 30px 0;
+}
+
+.matching-headings-MRQ ul {
+   padding-left: 0;
+}
+
+.matching-headings-MRQ ul li {
+  list-style-type: none;
+  margin-top: 14px;
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+
+  
+}
+
+.matching-headings-MRQ ul li .key-label {
+  font-weight: bold;
+  margin-top: 6px;
+  margin-right: 3px;
+}
+
+
+
+.matching-headings-MRQ ul li .grey-background {
+  background-color: #e0e0e0;
+  padding: 4px;
+  margin: 2px 0;
+  border-radius: 1px;
+  display: block;   
+  width: 100%;          
+  box-sizing: border-box;
+  font-weight: bolder;
+  
+}
+
+.answers-box{
+    border: 3px solid #ccc;
+    padding: 10px;
+    margin-top: 20px;
+    width: 100%;
+    max-width: 98%;
 }
 
 .matching-headings .heading-card {
@@ -115,14 +225,22 @@
 
 /* Submit & Results */
 .submit-button {
-  background-color: #167174;
-  color: white;
+  background-color: turquoise;
+  color: rgb(21, 1, 1);
   font-size: 1.1rem;
   padding: 0.5rem 1rem;
   border: none;
   border-radius: 6px;
   cursor: pointer;
   width: 140px;
+}
+
+.text-ST2{
+  background-color: #f4f4f4;
+  padding: 15px;
+  border-radius: 5px;
+  margin-top: 10px;
+  margin-bottom: 20px;
 }
 
 .result-box {

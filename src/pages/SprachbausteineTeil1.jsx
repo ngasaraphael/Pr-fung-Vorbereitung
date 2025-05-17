@@ -57,13 +57,16 @@ function MCQFillBlanksQuiz() {
       )}
 
       <h2>{data.title}</h2>
+      <p className="instructions">Lesen Sie den Text und schließen Sie die Lücken 21–30. Welche Lösung (a, b oder c) ist jeweils richtig?
+        Markieren Sie Ihre Lösungen für die Aufgaben 21–30 auf dem Antwortbogen.</p>
       <div className="reading-text" style={{ whiteSpace: 'pre-line', marginBottom: '1.5rem' }}>
         {data.text}
       </div>
 
+    <div className="AnswerST1">
       {Object.entries(data.blanks).map(([blankNumber, correctKey]) => (
-        <div key={blankNumber} className="question-block">
-          <p><strong>Lücke {blankNumber}:</strong></p>
+        <div key={blankNumber} className="question-block-ST1">
+          <p><strong>{blankNumber}</strong></p>
           <div>
             {Object.entries(data.options[blankNumber]).map(([optionKey, optionText]) => (
               <label key={optionKey} className="option-label">
@@ -82,7 +85,7 @@ function MCQFillBlanksQuiz() {
           </div>
         </div>
       ))}
-
+    </div>
       {!showResults ? (
         <div className="submit-container">
           <button className="submit-button" onClick={handleSubmit}>

@@ -1,4 +1,4 @@
-import { useParams } from 'react-router-dom';
+import { useParams, useLocation } from 'react-router-dom';
 import { useEffect, useState, useContext } from 'react';
 import { LevelContext } from '../context/LevelContext';
 import '../css/QuizPage.css';
@@ -10,6 +10,7 @@ const QUESTIONS_PER_PAGE = 5;
 function QuizPage() {
   const { level } = useContext(LevelContext);
   const { section } = useParams();
+  const location = useLocation(); // ✅ to access pathname
   const [questions, setQuestions] = useState([]);
   const [currentPage, setCurrentPage] = useState(1);
   const [userAnswers, setUserAnswers] = useState({});
@@ -152,17 +153,15 @@ function QuizPage() {
 
       {!showResults ? (
         <div className="submit-container">
-          <>
-            <button className="submit-button" onClick={handleSubmit}>
-              Abschicken
-            </button>
+          <button className="submit-button" onClick={handleSubmit}>
+            Abschicken
+          </button>
 
-            {submitAttempted && Object.keys(userAnswers).length < questions.length && (
-              <p style={{ color: 'red', marginTop: '0.5rem', fontSize: '0.95rem' }}>
-                ⚠️ Bitte beantworte alle Fragen, bevor du abschickst.
-              </p>
-            )}
-          </>
+          {submitAttempted && Object.keys(userAnswers).length < questions.length && (
+            <p style={{ color: 'red', marginTop: '0.5rem', fontSize: '0.95rem' }}>
+              ⚠️ Bitte beantworte alle Fragen, bevor du abschickst.
+            </p>
+          )}
         </div>
       ) : (
         <>
@@ -175,8 +174,14 @@ function QuizPage() {
             <p>{score / questions.length >= 0.6 ? '✅ Bestanden!' : '❌ Nicht bestanden'}</p>
           </div>
           <div className="submit-container">
-            <button className="submit-button" onClick={() => window.location.reload()}>
-              🔄 Neu laden
+            <button className="submit-button" onClick={() => {
+              setUserAnswers({});
+              setScore(0);
+              setShowResults(false);
+              setSubmitAttempted(false);
+              setCurrentPage?.(1); // optional if paginated
+            }}>
+              🔄 Neu starten
             </button>
           </div>
         </>

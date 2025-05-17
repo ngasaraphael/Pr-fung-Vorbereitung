@@ -1,3 +1,8 @@
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
 .navbar-links li {
   padding: 0.4rem 0.6rem;
 }
@@ -14,8 +19,8 @@
 
 
 .navbar {
-  background-color: #167174;
-  color: white;
+  background-color: #7ddadd;
+  color: rgb(1, 23, 31);
   padding: 0.2rem 1rem;
   display: flex;
   justify-content: flex-end;
@@ -24,6 +29,8 @@
   top: 0;
   z-index: 1000;
 }
+
+
 
 .navbar-controls {
   display: flex;
@@ -40,7 +47,7 @@
 }
 
 .navbar-links a {
-  color: white;
+  color: rgb(1, 23, 31);
   text-decoration: none;
   font-size: 1.1rem;
   display: flex;
@@ -52,7 +59,7 @@
 }
 
 .navbar-links a.active {
-  border-bottom: 3px solid #07ee0e;
+  border-bottom: 3px solid white;
   font-weight: bold;
 }
 
@@ -80,7 +87,7 @@
   font-size: 1.05rem;
   display: flex;
   flex-direction: column;
-  color: white;
+  color: rgb(1, 23, 31);
   width: 90px !important;
 }
 

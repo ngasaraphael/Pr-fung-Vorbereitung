@@ -54,35 +54,40 @@ function MatchingAdsReadingQuiz() {
       {showResults && score / data.situations.length >= 0.6 && (
         <Confetti width={width} height={height} numberOfPieces={200} />
       )}
-      <h2>{data.title}</h2>
-
-      <div className="matching-headings">
-        {Object.entries(data.ads).map(([key, ad]) => (
-          <div key={key} className="heading-card">
-            <strong>{key}: {ad.title}</strong>
-            <span>{ad.description}</span>
-          </div>
-        ))}
-      </div>
+      <h2>Leseverstehen Teil 3</h2>
+            <p className="instructions">Lesen Sie die Situationen 1–10 und die Anzeigen a–l. Finden Sie für jede Situation die passende
+          Anzeige. Sie können jede Anzeige nur einmal benutzen.
+          Wenn Sie zu einer Situation keine Anzeige finden, markieren Sie ein x.</p>
 
       {data.situations.map((s, idx) => (
-        <div key={s.id} className="question-block">
-          <p><strong>Situation {idx + 1}:</strong> {s.text}</p>
+        <div key={s.id} className="question-block-LT3">
+          <p className='situation-LT3'><strong>{idx + 1}</strong> {s.text}</p>
           <label>
-            Wählen Sie die passende Anzeige:
             <select
               value={userMatches[s.id] || ''}
               onChange={(e) => handleSelect(s.id, e.target.value)}
               disabled={showResults}
+              className='answer-dropdown'
             >
               <option value="">-- auswählen --</option>
+
               {Object.keys(data.ads).map((key) => (
                 <option key={key} value={key}>{key}</option>
               ))}
+              <option value="X">X</option>
             </select>
           </label>
         </div>
       ))}
+
+      <div className="matching-headings">
+        {Object.entries(data.ads).map(([key, ad]) => (
+          <div key={key} className="heading-card">
+            <strong>{key} {ad.title}</strong>
+            <span>{ad.description}</span>
+          </div>
+        ))}
+      </div>
 
       {!showResults ? (
         <div className="submit-container">

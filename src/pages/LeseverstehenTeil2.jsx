@@ -3,6 +3,7 @@ import { LevelContext } from '../context/LevelContext';
 import '../css/QuizPage.css';
 import Confetti from 'react-confetti';
 import { useWindowSize } from '@react-hook/window-size';
+import { useLocation } from 'react-router-dom'; // ✅ Added
 
 function GroupedReadingQuiz() {
   const { level } = useContext(LevelContext);
@@ -11,8 +12,8 @@ function GroupedReadingQuiz() {
   const [score, setScore] = useState(0);
   const [submitAttempted, setSubmitAttempted] = useState(false);
   const [width, height] = useWindowSize();
+  const location = useLocation(); // ✅ Added
 
-  // ✅ Dynamically load grouped_reading_single.json by level
   const allReadings = import.meta.glob('../data/*/grouped_reading_single.json', { eager: true });
   const matchingPath = Object.keys(allReadings).find((path) => path.includes(`/${level}/`));
   const readingData = matchingPath ? allReadings[matchingPath] : null;
@@ -51,14 +52,18 @@ function GroupedReadingQuiz() {
         <Confetti width={width} height={height} numberOfPieces={250} />
       )}
 
-      <h2>{readingData.title}</h2>
+      <h2>Leseverstehen Teil 2</h2>
+      <p className="instructions">Lesen Sie den Text und die Aufgaben 1–5. Welche Lösung  ist jeweils richtig?
+       Markieren Sie Ihre Lösungen für die Aufgaben  auf dem Antwortbogen.</p>
       <div className="reading-text">
+        <p className="title">{readingData.title}</p>
+         <span className="subtitle">{readingData.subtitle}</span>
         <p>{readingData.text}</p>
       </div>
 
       {questions.map((q, index) => (
         <div key={q.id} className="question-block">
-          <p><strong>Frage {index + 1}:</strong> {q.question}</p>
+          <p><strong>{index + 1}</strong> {q.question}</p>
 
           {q.options.map((opt) => (
             <label key={opt} className="option-label">
@@ -95,8 +100,14 @@ function GroupedReadingQuiz() {
             <p>{score / questions.length >= 0.6 ? '✅ Bestanden!' : '❌ Nicht bestanden'}</p>
           </div>
           <div className="submit-container">
-            <button className="submit-button" onClick={() => window.location.reload()}>
-              🔄 Neu laden
+            <button className="submit-button" onClick={() => {
+              setUserAnswers({});
+              setScore(0);
+              setShowResults(false);
+              setSubmitAttempted(false);
+              setCurrentPage?.(1); // optional if paginated
+            }}>
+              🔄 Neu starten
             </button>
           </div>
         </>

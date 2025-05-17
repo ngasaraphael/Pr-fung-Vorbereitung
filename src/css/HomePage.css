@@ -9,6 +9,10 @@
   text-align: center;
 }
 
+
+
+
+
 .homepage h1 {
   font-size: 2.5rem;
   margin-bottom: 0.75rem;
@@ -36,7 +40,7 @@
   justify-content: center;
   padding: 2rem 1.5rem;
   border-radius: 10px;
-  color: white;
+  background-color: #7ddadd;
   width: 160px;
   height: 160px;
   font-size: 1.1rem;
@@ -44,11 +48,10 @@
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
   transition: transform 0.3s ease;
   text-align: center;
+
 }
 
-.card div{
-  font-size: 24px;
-}
+
 
 .card:hover {
   transform: scale(1.05);
@@ -60,40 +63,7 @@
   margin-bottom: 0.5rem;
 }
 
-/* Unique colors per card */
-.card.reading {
-  background-color: #1f6521; /* green */
-}
 
-.card.reading-ads-matching {
-  background-color: #5c6bc0; 
-}
-.card-matching{
-  background-color: #707a10; 
-}
-.group-reading{
-  background-color: #651f2b; 
-}
-
-.fill-blanks{
-    background-color: #1f6564; 
-}
-
-.mcqfill-blanks{
-  background-color: #653e1f; 
-}
-
-.card.listening {
-  background-color: #0668b8; /* blue */
-}
-
-.card.satzbau {
-  background-color: #cb851b; /* orange */
-}
-
-.card.exam {
-  background-color: #811894; /* purple */
-}
 
 
 
