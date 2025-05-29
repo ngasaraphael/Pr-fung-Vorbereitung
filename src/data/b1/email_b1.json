@@ -1,0 +1,41 @@
+{
+  "level": "b1",
+  "title": "Schriftlicher Ausdruck",
+  "instructions": "Antworten Sie auf die folgende E-Mail. Schreiben Sie etwas zu allen vier Punkten:\n• welche Ausflüge Sie mit Marianne machen wollen\n• was die beste Jahreszeit für die Reise ist\n• welche Kleidung sie mitnehmen soll\n• wie sie sich am besten auf die Reise vorbereiten kann",
+  "instruction2":"Überlegen Sie sich eine passende Reihenfolge der Punkte, einen passenden Betreff, eine passende Anrede, Einleitung und einen passenden Schluss.",
+
+  "emailPrompt": "Liebe/r ,\ndanke für deine nette Einladung! Ich komme dich sehr gerne besuchen, um dein Land kennenzulernen – wie du weißt, war ich ja noch nie da. Wann wäre die beste Zeit, dich zu besuchen? Ich weiß noch nicht einmal, ob es bei euch im Sommer sehr heiß wird – allzu große Hitze mag ich nämlich nicht so sehr. Und gibt es sonst noch irgendwelche Dinge, die ich wissen sollte, bevor ich diese Reise mache?\nBitte schreib mir möglichst bald, damit ich mich gut auf die Reise vorbereiten kann.\nHerzliche Grüße\nMarianne",
+  "responseEmailWithGaps": "Liebe Marianne,\n\n[Begrüßung/Dank: ⬇️] __________ für deine Nachricht. Ich freue mich sehr, dass du mich besuchen willst!\n\nIch denke, der [Jahreszeit: ⬇️] __________ ist die beste Zeit für deine Reise. Dann ist es nicht zu heiß und du kannst die Natur genießen.\n\nWir können einen Ausflug in die Berge machen und auch das Schloss besichtigen.\n\nBitte bring [Kleidung: ⬇️] __________ mit, weil wir viel zu Fuß unterwegs sein werden.\n\nZur Vorbereitung ist es gut, wenn du [Modalverb Perfekt: ⬇️] __________, was du mitbringen solltest.\n\nIch freue mich sehr auf deinen Besuch!\n\n[Abschiedsformel: ⬇️] __________\n[Name: ⬇️] __________",
+  "gaps": [
+    {
+      "label": "Begrüßung/Dank",
+      "options": ["danke dir", "vielen Dank", "bitte sehr"],
+      "correctAnswer": "vielen Dank"
+    },
+    {
+      "label": "Jahreszeit",
+      "options": ["Frühling", "Sommer", "Herbst"],
+      "correctAnswer": "Frühling"
+    },
+    {
+      "label": "Kleidung",
+      "options": ["eine Jacke", "bequeme Schuhe", "ein Regenschirm"],
+      "correctAnswer": "bequeme Schuhe"
+    },
+    {
+      "label": "Modalverb Perfekt",
+      "options": ["hast lesen können", "lesen kannst", "lesen konntest"],
+      "correctAnswer": "hast lesen können"
+    },
+    {
+      "label": "Abschiedsformel",
+      "options": ["Viele Grüße", "Mit freundlichen Grüßen", "Liebe Grüße"],
+      "correctAnswer": "Liebe Grüße"
+    },
+    {
+      "label": "Name",
+      "options": ["Anna", "Petra", "Lena"],
+      "correctAnswer": "Anna"
+    }
+  ]
+}

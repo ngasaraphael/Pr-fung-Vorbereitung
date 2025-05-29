@@ -16,7 +16,7 @@ function HomePage() {
   return (
     <div className="homepage">
       <h1>Los geht’s!</h1>
-      <p>Wähle einen Abschnitt:</p>
+      <p>Wähle einen Abschnitt:</p> 
 
         <div className="card-container">
           <div className="card" onClick={() => handleNavigate('reading-matching')}>
@@ -39,23 +39,27 @@ function HomePage() {
             <FaKeyboard className="card-icon" />
             Sprachbausteine Teil 2
           </div>
-          <div className="card" onClick={() => handleNavigate('reading')}>
-            <FaBook className="card-icon" />
-            <div>Lesen</div>
-          </div>
 
-      
-
-          
-
-          <div className="card " onClick={() => handleNavigate('listening')}>
+          <div className="card" onClick={() => handleNavigate('listening1')}> 
             <FaHeadphones className="card-icon" />
-            <div>Hören</div>
+            <div>Hörverstehen Teil 1</div>
           </div>
-          <div className="card " onClick={() => handleNavigate('satzbau')}>
-            <FaCubes className="card-icon" />
-            <div>Satzbau</div>
+
+          <div className="card" onClick={() => handleNavigate('listening2')}>
+            <FaHeadphones className="card-icon" />
+            <div>Hörverstehen Teil 2</div>
           </div>
+
+          <div className="card" onClick={() => handleNavigate('listening3')}>
+            <FaHeadphones className="card-icon" />
+            <div>Hörverstehen Teil 3</div>
+          </div>
+
+          <div className="card" onClick={() => handleNavigate('email')}>
+            <FaPenFancy className="card-icon" />
+            <div>Schriftlicher Ausdruck</div>
+          </div>
+
           <div className="card exam" onClick={() => handleNavigate('exam')}>
             <FaClipboardList className="card-icon" />
             <div>Gesamte Prüfung</div>

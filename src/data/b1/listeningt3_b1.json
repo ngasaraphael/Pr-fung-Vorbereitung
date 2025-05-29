@@ -1,0 +1,37 @@
+{
+  "level": "b1",
+  "title": "Hörverstehen Teil 3",
+  "instructions": "Sie hören nun fünf kurze Texte. Dazu sollen Sie fünf Aufgaben lösen. Sie hören jeden Text zweimal.\nEntscheiden Sie beim Hören, ob die Aussagen 56–60 richtig oder falsch sind.\nMarkieren Sie Ihre Lösungen für die Aufgaben 56–60 auf dem Antwortbogen.\nMarkieren Sie PLUS (+) gleich richtig und MINUS (−) gleich falsch.",
+  "questions": [
+    {
+      "id": "56",
+      "text": "Das Büro ist in der Schillerstraße.",
+      "audio": "/audio/b1/t3_56.mp3",
+      "correctAnswer": true
+    },
+    {
+      "id": "57",
+      "text": "Der Film „Sommer“ läuft im Filmcasino.",
+      "audio": "/audio/b1/t3_57.mp3",
+      "correctAnswer": false
+    },
+    {
+      "id": "58",
+      "text": "Im Süden Bayerns wird es am Nachmittag schön und nicht sehr warm.",
+      "audio": "/audio/b1/t3_58.mp3",
+      "correctAnswer": true
+    },
+    {
+      "id": "59",
+      "text": "Im Zugrestaurant können Sie auch Zeitungen kaufen.",
+      "audio": "/audio/b1/t3_59.mp3",
+      "correctAnswer": false
+    },
+    {
+      "id": "60",
+      "text": "Damenröcke kosten heute 39 Euro.",
+      "audio": "/audio/b1/t3_60.mp3",
+      "correctAnswer": true
+    }
+  ]
+}

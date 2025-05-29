@@ -1,0 +1,58 @@
+{
+  "level": "b1",
+  "title": "Hörverstehen Teil 2",
+  "instructions": "Sie hören nun ein Gespräch. Dazu sollen Sie zehn Aufgaben lösen.\nSie hören das Gespräch zweimal.\nEntscheiden Sie beim Hören, ob die Aussagen 46-55 richtig oder falsch sind. Markieren Sie Ihre Lösungen auf dem Antwortbogen bei den Aufgaben 46-55. Markieren Sie PLUS (+) gleich richtig und MINUS (−) gleich falsch auf dem Antwortbogen.\nLesen Sie jetzt die Aufgaben 46-55. Sie haben dazu eine Minute Zeit.",
+  "audio": "/audio/b1/listeningt2.mp3",
+  "questions": [
+    {
+      "id": "46",
+      "text": "Der Sportverein plant eine große Feier.",
+      "correctAnswer": true
+    },
+    {
+      "id": "47",
+      "text": "Der Journalist unterhält sich mit einer Vertreterin des Sportvereins.",
+      "correctAnswer": true
+    },
+    {
+      "id": "48",
+      "text": "Viele Papiere aus den Anfängen des Vereins sind im Krieg verloren gegangen.",
+      "correctAnswer": false
+    },
+    {
+      "id": "49",
+      "text": "Der Verein veröffentlicht jedes Jahr eine Festzeitung.",
+      "correctAnswer": false
+    },
+    {
+      "id": "50",
+      "text": "Der Verein hatte von Anfang an auch Frauen als Mitglieder.",
+      "correctAnswer": false
+    },
+    {
+      "id": "51",
+      "text": "Heute gibt es im Verein mehr Frauen als Männer.",
+      "correctAnswer": true
+    },
+    {
+      "id": "52",
+      "text": "Im Verein kann man Sport im Freien und in der Halle treiben.",
+      "correctAnswer": true
+    },
+    {
+      "id": "53",
+      "text": "Die Mitglieder müssen die Kosten für ihren Verein alleine tragen.",
+      "correctAnswer": false
+    },
+    {
+      "id": "54",
+      "text": "Der Sportverein bietet auch Schwimmkurse an.",
+      "correctAnswer": true
+    },
+    {
+      "id": "55",
+      "text": "Einige Leute, die im Verein ausgebildet wurden, arbeiten dort heute als Lehrer.",
+      "correctAnswer": true
+    }
+  ]
+}

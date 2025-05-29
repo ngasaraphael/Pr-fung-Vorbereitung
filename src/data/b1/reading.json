@@ -1,9 +1,0 @@
-[
-  {
-    "id": 1,
-    "type": "mcq",
-    "question": "Was ist die Hauptstadt von Deutschland?",
-    "options": ["Berlin", "Hamburg", "München", "Stuttgart"],
-    "answer": "Berlin"
-  }
-]

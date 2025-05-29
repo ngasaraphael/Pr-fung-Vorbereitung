@@ -1,0 +1,37 @@
+{
+  "level": "b1",
+  "title": "Hörverstehen Teil 1",
+  "instructions": "Sie hören nun fünf kurze Texte. Dazu sollen Sie fünf Aufgaben lösen.\nSie hören diese Texte nur einmal.\nEntscheiden Sie beim Hören, ob die Aussagen 41-45 richtig oder falsch sind. Markieren Sie Ihre Lösungen auf dem Antwortbogen bei den Aufgaben 41-45. Markieren Sie PLUS (+) gleich richtig und MINUS (−) gleich falsch auf dem Antwortbogen.\nLesen Sie jetzt die Aufgaben 41-45. Sie haben dazu 30 Sekunden Zeit.",
+  "questions": [
+    {
+      "id": "41",
+      "text": "Die Sprecherin muss im Haushalt fast alles alleine machen.",
+      "audio": "/audio/b1/41.mp3",
+      "correctAnswer": false
+    },
+    {
+      "id": "42",
+      "text": "Der Sprecher wäscht das Geschirr und die Wäsche.",
+      "audio": "/audio/b1/42.mp3",
+      "correctAnswer": true
+    },
+    {
+      "id": "43",
+      "text": "Die Sprecherin ist berufstätig und hat keine Zeit für die Hausarbeit.",
+      "audio": "/audio/b1/43.mp3",
+      "correctAnswer": false
+    },
+    {
+      "id": "44",
+      "text": "Der Sprecher teilt sich mit seiner Partnerin die Arbeit je nach Situation auf.",
+      "audio": "/audio/b1/44.mp3",
+      "correctAnswer": true
+    },
+    {
+      "id": "45",
+      "text": "Die Sprecherin ist froh, dass ihr Mann so viele Hausarbeiten übernimmt.",
+      "audio": "/audio/b1/45.mp3",
+      "correctAnswer": true
+    }
+  ]
+}

@@ -11,8 +11,22 @@
   margin-bottom: 1rem;
 }
 
+.response-text{
+  line-height: 1.6;
+}
+
+.italic-line {
+  font-style: italic;
+}
+
+.normal-line {
+  margin: 12px 0;
+  font-style: normal;
+}
+
 .instructions{
   font-style: italic;
+  line-height: 1.4;
 }
 
 .title{
@@ -25,12 +39,24 @@
 .subtitle{
 font-weight: bold;
 }
+.email-block{
+  text-wrap: auto;
+  background-color: #f4f4f4;
+  padding: 16px;
+  border-radius: 2px;
+  font-family:'Roboto', sans-serif;
+  line-height: 1.6;
+}
 
 
 .question-block-MRQ {
   margin-bottom: 2rem;
   border-bottom: 1px solid #ddd;
   padding-bottom: 1rem;
+}
+
+.HT1_audio{
+  margin-top: 10px;
 }
 
  .question-block-MRQ ul.no-bullets {

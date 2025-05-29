@@ -19,10 +19,11 @@ body {
 
 
 .navbar {
-  background-color: #7ddadd;
+  background-color: white;
   color: rgb(1, 23, 31);
   padding: 0.2rem 1rem;
   display: flex;
+  border-bottom: 1px solid rgb(223, 223, 223);
   justify-content: flex-end;
   align-items: center;
   position: sticky;
@@ -56,6 +57,7 @@ body {
 
 .navbar-links a svg {
   margin-right: 6px;
+  color: #379295;
 }
 
 .navbar-links a.active {
