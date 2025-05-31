@@ -25,7 +25,7 @@ function LeseverstehenTeil1() {
         setData(mod.default);
       })
       .catch((err) => {
-        console.error("❌ Failed to load matching data:", err);
+  
         setData(null);
       });
   }, [level, examSet]);
@@ -52,7 +52,7 @@ function LeseverstehenTeil1() {
       <div className="quiz-container">
         <h2>Leseverstehen Teil 1</h2>
         <label>
-          Prüfungsset:
+          Prüfung auswählen:{' '}
           <select value={examSet} onChange={(e) => setExamSet(e.target.value)} style={{ marginLeft: '0.5rem' }}>
             <option value="Exam1">Prüfung 1</option>
             <option value="Exam2">Prüfung 2</option>

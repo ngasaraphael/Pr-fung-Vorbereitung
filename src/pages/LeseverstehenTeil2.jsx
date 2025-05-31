@@ -25,7 +25,7 @@ function LeseverstehenTeil2() {
     import(`../data/${level}/${examSet}/LeseverstehenTeil2.json`)
       .then((mod) => setData(mod.default))
       .catch((err) => {
-        console.error('❌ Fehler beim Laden der Datei:', err);
+
         setLoadError(true);
       });
   }, [level, examSet]);
@@ -52,7 +52,7 @@ function LeseverstehenTeil2() {
       <div className="quiz-container">
         <h2>📄 Kein Lesetext gefunden</h2>
         <label>
-          Prüfungsset:
+        rüfung auswählen:{' '}
           <select value={examSet} onChange={(e) => setExamSet(e.target.value)} style={{ marginLeft: '0.5rem' }}>
             <option value="Exam1">Prüfung 1</option>
             <option value="Exam2">Prüfung 2</option>

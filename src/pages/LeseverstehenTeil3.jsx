@@ -29,7 +29,7 @@ function LeseverstehenTeil3() {
       setSubmitAttempted(false);
       setLoadError(false);
     } else {
-      console.error('❌ Datei nicht gefunden für:', level, exam);
+
       setLoadError(true);
       setData(null);
     }

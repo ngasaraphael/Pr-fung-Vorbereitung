@@ -41,9 +41,6 @@ function App() {
           <Route path="/quiz/listening2" element={<HoerverstehenTeil2 />} /> 
           <Route path="/quiz/listening3" element={<HoerverstehenTeil3 />} />
           <Route path="/quiz/email" element={<Email />} />
-
-
-
         </Routes>
       </Router>
     </LevelProvider> 

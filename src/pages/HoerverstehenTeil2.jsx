@@ -6,27 +6,33 @@ import { useWindowSize } from '@react-hook/window-size';
 
 function HoerverstehenTeil2() {
   const { level } = useContext(LevelContext);
+  const [exam, setExam] = useState('Exam1');
   const [data, setData] = useState(null);
   const [answers, setAnswers] = useState({});
   const [submitAttempted, setSubmitAttempted] = useState(false);
   const [showResults, setShowResults] = useState(false);
   const [score, setScore] = useState(0);
   const [width, height] = useWindowSize();
+  const [loadError, setLoadError] = useState(false);
 
   useEffect(() => {
-    setAnswers({});
-    setShowResults(false);
-    setSubmitAttempted(false);
+    const allFiles = import.meta.glob('../data/*/Exam*/hoerverstehenTeil2.json', { eager: true });
+    const matchPath = Object.keys(allFiles).find(
+      (path) => path.includes(`/${level}/`) && path.includes(`/${exam}/`)
+    );
+    const file = matchPath ? allFiles[matchPath] : null;
 
-    import(`../data/${level}/listeningt2_${level}.json`)
-      .then((mod) => {
-        setData(mod.default);
-      })
-      .catch((err) => {
-        console.error("❌ Failed to load listening data:", err);
-        setData(null);
-      });
-  }, [level]);
+    if (file) {
+      setData(file);
+      setAnswers({});
+      setShowResults(false);
+      setSubmitAttempted(false);
+      setLoadError(false);
+    } else {
+      setData(null);
+      setLoadError(true);
+    }
+  }, [level, exam]);
 
   const handleSelect = (questionId, value) => {
     setAnswers((prev) => ({ ...prev, [questionId]: value === 'true' }));
@@ -45,16 +51,45 @@ function HoerverstehenTeil2() {
     setShowResults(true);
   };
 
-  if (data === null) {
+  if (loadError) {
     return (
       <div className="quiz-container">
-        <p>📦 Keine Hörverstehen-Aufgaben für Level <strong>{level.toUpperCase()}</strong> verfügbar.</p>
+        <div className="exam-switcher">
+          <label>
+            Prüfung auswählen:{' '}
+            <select value={exam} onChange={(e) => setExam(e.target.value)}>
+              <option value="Exam1">Prüfung 1</option>
+              <option value="Exam2">Prüfung 2</option>
+              <option value="Exam3">Prüfung 3</option>
+            </select>
+          </label>
+        </div>
+        <p>❌ Keine Hörverstehen-Datei für <strong>{level.toUpperCase()}</strong> – {exam}</p>
+      </div>
+    );
+  }
+
+  if (!data) {
+    return (
+      <div className="quiz-container">
+        <p>⏳ Lade Inhalte für <strong>{level.toUpperCase()}</strong> – {exam}...</p>
       </div>
     );
   }
 
   return (
     <div className="quiz-container">
+      <div className="exam-switcher">
+        <label>
+          Prüfung auswählen:{' '}
+          <select value={exam} onChange={(e) => setExam(e.target.value)}>
+            <option value="Exam1">Prüfung 1</option>
+            <option value="Exam2">EPrüfung 2</option>
+            <option value="Exam3">Prüfung 3</option>
+          </select>
+        </label>
+      </div>
+
       {showResults && score / data.questions.length >= 0.6 && (
         <Confetti width={width} height={height} numberOfPieces={250} />
       )}
@@ -98,7 +133,7 @@ function HoerverstehenTeil2() {
 
           {showResults && (
             <p>
-              {answers[q.id] === q.correctAnswer ? '✅ Richtig' : '❌ Falsch'} — Richtige Antwort:{" "}
+              {answers[q.id] === q.correctAnswer ? '✅ Richtig' : '❌ Falsch'} — Richtige Antwort:{' '}
               <strong>{q.correctAnswer ? 'Richtig' : 'Falsch'}</strong>
             </p>
           )}
@@ -118,7 +153,7 @@ function HoerverstehenTeil2() {
           <p>{score / data.questions.length >= 0.6 ? '✅ Bestanden!' : '❌ Nicht bestanden'}</p>
         </div>
       )}
-    </div> 
+    </div>
   );
 }
 

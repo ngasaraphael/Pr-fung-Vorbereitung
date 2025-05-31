@@ -4,23 +4,33 @@ import { LevelContext } from '../context/LevelContext';
 
 function Email() {
   const { level } = useContext(LevelContext);
+  const [examSet, setExamSet] = useState('Exam1');
   const [data, setData] = useState(null);
   const [answers, setAnswers] = useState({});
   const [submitAttempted, setSubmitAttempted] = useState(false);
   const [showResults, setShowResults] = useState(false);
+  const [loadError, setLoadError] = useState(false);
+
+  const allFiles = import.meta.glob('../data/*/Exam*/email.json', { eager: true });
 
   useEffect(() => {
     setAnswers({});
     setShowResults(false);
     setSubmitAttempted(false);
+    setLoadError(false);
 
-    import(`../data/${level}/email_${level}.json`)
-      .then((mod) => setData(mod.default))
-      .catch((err) => {
-        console.error("❌ Failed to load email data:", err);
-        setData(null);
-      });
-  }, [level]);
+    const match = Object.keys(allFiles).find(
+      path => path.includes(`/${level}/`) && path.includes(`/${examSet}/`)
+    );
+
+    if (match && allFiles[match]) {
+      setData(allFiles[match]);
+    } else {
+  
+      setLoadError(true);
+      setData(null);
+    }
+  }, [level, examSet]);
 
   const handleSelect = (label, value) => {
     setAnswers((prev) => ({ ...prev, [label]: value }));
@@ -59,11 +69,38 @@ function Email() {
     );
   };
 
-  if (!data) {
-    return <div className="quiz-container">📭 Keine Schreibaufgabe für Level <strong>{level.toUpperCase()}</strong> verfügbar.</div>;
+  const renderExamSelector = () => (
+    <div className="exam-switcher">
+      <label>
+         Prüfung auswählen:{' '}
+        <select value={examSet} onChange={(e) => setExamSet(e.target.value)} style={{ marginLeft: '0.5rem' }}>
+          <option value="Exam1">Exam 1</option>
+          <option value="Exam2">Exam 2</option>
+          <option value="Exam3">Exam 3</option>
+        </select>
+      </label>
+    </div>
+  );
+
+  if (loadError) {
+    return (
+      <div className="quiz-container">
+        {renderExamSelector()}
+        <h2>❌ Fehler beim Laden</h2>
+        <p>Keine Schreibaufgabe für {level.toUpperCase()} – {examSet} gefunden.</p>
+      </div>
+    );
   }
 
-  // Render email with inline gaps replaced
+  if (!data) {
+    return (
+      <div className="quiz-container">
+        {renderExamSelector()}
+        ⏳ Lade Schreibaufgabe ({examSet})...
+      </div>
+    );
+  }
+
   const parsedResponse = data.responseEmailWithGaps.split(/(\[.*?: ⬇️\])/g).map((part, i) => {
     const match = part.match(/\[(.*?): ⬇️\]/);
     if (match) {
@@ -75,27 +112,27 @@ function Email() {
 
   return (
     <div className="quiz-container">
+      {renderExamSelector()}
+
       <h2>{data.title}</h2>
-      
 
       <div className="email-section">
-        <p className='italic-line '>Sie haben von einer Freundin folgende E-Mail erhalten:</p>
+        <p className="italic-line">Sie haben von einer Freundin folgende E-Mail erhalten:</p>
         <pre className="email-block">{data.emailPrompt}</pre>
       </div>
 
-            <div className="instructions">
-            {data.instructions.split('\n').map((line, idx) => (
-                <div key={idx} className={idx === 0 ? 'italic-line' : 'normal-line'}>
-                {line}
-                </div>
-            ))}
-
-            {data.instruction2 && (
-                <div className="italic-line" style={{ marginTop: '0.5rem' }}>
-                {data.instruction2}
-                </div>
-            )}
-            </div>
+      <div className="instructions">
+        {data.instructions.split('\n').map((line, idx) => (
+          <div key={idx} className={idx === 0 ? 'italic-line' : 'normal-line'}>
+            {line}
+          </div>
+        ))}
+        {data.instruction2 && (
+          <div className="italic-line" style={{ marginTop: '0.5rem' }}>
+            {data.instruction2}
+          </div>
+        )}
+      </div>
 
       <div className="response-section">
         <h3>Antwort mit Lücken:</h3>
