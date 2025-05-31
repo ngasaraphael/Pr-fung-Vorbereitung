@@ -58,9 +58,9 @@ function LeseverstehenTeil3() {
         <label>
           Prüfung auswählen:{' '}
           <select value={exam} onChange={(e) => setExam(e.target.value)}>
-            <option value="Exam1">Exam1</option>
-            <option value="Exam2">Exam2</option>
-            <option value="Exam3">Exam3</option>
+            <option value="Exam1">Prüfung 1</option>
+            <option value="Exam2">Prüfung 2</option>
+            <option value="Exam3">Prüfung 3</option>
           </select>
         </label>
       </div>

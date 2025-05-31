@@ -54,9 +54,9 @@ function LeseverstehenTeil2() {
         <label>
           Prüfungsset:
           <select value={examSet} onChange={(e) => setExamSet(e.target.value)} style={{ marginLeft: '0.5rem' }}>
-            <option value="Exam1">Exam 1</option>
-            <option value="Exam2">Exam 2</option>
-            <option value="Exam3">Exam 3</option>
+            <option value="Exam1">Prüfung 1</option>
+            <option value="Exam2">Prüfung 2</option>
+            <option value="Exam3">Prüfung 3</option>
           </select>
         </label>
         <p>Für das Level <strong>{level.toUpperCase()}</strong> wurde kein Lesetext geladen.</p>
@@ -83,9 +83,9 @@ function LeseverstehenTeil2() {
       <label>
         Prüfungsset:
         <select value={examSet} onChange={(e) => setExamSet(e.target.value)} style={{ marginLeft: '0.5rem' }}>
-          <option value="Exam1">Exam 1</option>
-          <option value="Exam2">Exam 2</option>
-          <option value="Exam3">Exam 3</option>
+          <option value="Exam1">Prüfung 1</option>
+          <option value="Exam2">Prüfung 2</option>
+          <option value="Exam3">Prüfung 3</option>
         </select>
       </label>
 
