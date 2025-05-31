@@ -4,8 +4,9 @@ import { LevelContext } from '../context/LevelContext';
 import Confetti from 'react-confetti';
 import { useWindowSize } from '@react-hook/window-size';
 
-function MatchingReadingQuiz() {
+function LeseverstehenTeil1() {
   const { level } = useContext(LevelContext);
+  const [examSet, setExamSet] = useState('Exam1'); // ✅ dropdown state
   const [data, setData] = useState(null);
   const [userMatches, setUserMatches] = useState({});
   const [submitAttempted, setSubmitAttempted] = useState(false);
@@ -14,12 +15,12 @@ function MatchingReadingQuiz() {
   const [width, height] = useWindowSize();
 
   useEffect(() => {
-    setData(null); // ✅ clear old data when level changes
+    setData(null);
     setShowResults(false);
     setUserMatches({});
     setSubmitAttempted(false);
 
-    import(`../data/${level}/matching_reading_${level}.json`)
+    import(`../data/${level}/${examSet}/LeseverstehenTeil1.json`)
       .then((mod) => {
         setData(mod.default);
       })
@@ -27,7 +28,7 @@ function MatchingReadingQuiz() {
         console.error("❌ Failed to load matching data:", err);
         setData(null);
       });
-  }, [level]);
+  }, [level, examSet]);
 
   const handleSelect = (paraId, value) => {
     setUserMatches((prev) => ({ ...prev, [paraId]: value }));
@@ -49,7 +50,16 @@ function MatchingReadingQuiz() {
   if (data === null) {
     return (
       <div className="quiz-container">
-        <p>📦 Keine Aufgaben für Level <strong>{level.toUpperCase()}</strong> verfügbar.</p>
+        <h2>Leseverstehen Teil 1</h2>
+        <label>
+          Prüfungsset:
+          <select value={examSet} onChange={(e) => setExamSet(e.target.value)} style={{ marginLeft: '0.5rem' }}>
+            <option value="Exam1">Exam 1</option>
+            <option value="Exam2">Exam 2</option>
+            <option value="Exam3">Exam 3</option>
+          </select>
+        </label>
+        <p>📦 Keine Aufgaben für Level <strong>{level.toUpperCase()}</strong> und {examSet} verfügbar.</p>
       </div>
     );
   }
@@ -61,20 +71,32 @@ function MatchingReadingQuiz() {
       )}
 
       <h2>Leseverstehen Teil 1</h2>
-      <p className='instructions' >Lesen Sie die Überschriften a–j und die Texte 1–5. Finden Sie für jeden Text die passende Überschrift.
-        Sie können jede Überschrift nur einmal benutzen.
-        Markieren Sie Ihre Lösungen für die Aufgaben 1–5 auf dem Antwortbogen.</p>
-          <div className="matching-headings-MRQ">
-            <ul className="no-bullets">
-              {Object.entries(data.headings).map(([key, text]) => (
-                <li key={key} className="li-row">
-                  <span className="key-label">{key}</span>
-                  <span className="grey-background">{text}</span>
-                </li>
-              ))}
-            </ul>
-          </div>
 
+      <label>
+        Prüfungsset:
+        <select value={examSet} onChange={(e) => setExamSet(e.target.value)} style={{ marginLeft: '0.5rem' }}>
+          <option value="Exam1">Exam 1</option>
+          <option value="Exam2">Exam 2</option>
+          <option value="Exam3">Exam 3</option>
+        </select>
+      </label>
+
+      <p className='instructions'>
+        Lesen Sie die Überschriften a–j und die Texte 1–5. Finden Sie für jeden Text die passende Überschrift.
+        Sie können jede Überschrift nur einmal benutzen.
+        Markieren Sie Ihre Lösungen für die Aufgaben 1–5 auf dem Antwortbogen.
+      </p>
+
+      <div className="matching-headings-MRQ">
+        <ul className="no-bullets">
+          {Object.entries(data.headings).map(([key, text]) => (
+            <li key={key} className="li-row">
+              <span className="key-label">{key}</span>
+              <span className="grey-background">{text}</span>
+            </li>
+          ))}
+        </ul>
+      </div>
 
       {data.paragraphs.map((para, idx) => (
         <div key={para.id} className="question-block-MRQ">
@@ -117,4 +139,4 @@ function MatchingReadingQuiz() {
   );
 }
 
-export default MatchingReadingQuiz;
+export default LeseverstehenTeil1;

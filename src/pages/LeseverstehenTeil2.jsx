@@ -1,33 +1,34 @@
-import { useContext, useState } from 'react';
+import { useContext, useEffect, useState } from 'react';
 import { LevelContext } from '../context/LevelContext';
 import '../css/QuizPage.css';
 import Confetti from 'react-confetti';
 import { useWindowSize } from '@react-hook/window-size';
-import { useLocation } from 'react-router-dom'; // ✅ Added
 
-function GroupedReadingQuiz() {
+function LeseverstehenTeil2() {
   const { level } = useContext(LevelContext);
+  const [examSet, setExamSet] = useState('Exam1');
+  const [data, setData] = useState(null);
   const [userAnswers, setUserAnswers] = useState({});
+  const [submitAttempted, setSubmitAttempted] = useState(false);
   const [showResults, setShowResults] = useState(false);
   const [score, setScore] = useState(0);
-  const [submitAttempted, setSubmitAttempted] = useState(false);
   const [width, height] = useWindowSize();
-  const location = useLocation(); // ✅ Added
+  const [loadError, setLoadError] = useState(false);
 
-  const allReadings = import.meta.glob('../data/*/grouped_reading_single.json', { eager: true });
-  const matchingPath = Object.keys(allReadings).find((path) => path.includes(`/${level}/`));
-  const readingData = matchingPath ? allReadings[matchingPath] : null;
+  useEffect(() => {
+    setData(null);
+    setLoadError(false);
+    setUserAnswers({});
+    setShowResults(false);
+    setSubmitAttempted(false);
 
-  if (!readingData) {
-    return (
-      <div className="quiz-container">
-        <h2>📄 Kein Lesetext gefunden</h2>
-        <p>Für das Level <strong>{level.toUpperCase()}</strong> wurde kein Lesetext geladen.</p>
-      </div>
-    );
-  }
-
-  const questions = readingData.questions;
+    import(`../data/${level}/${examSet}/LeseverstehenTeil2.json`)
+      .then((mod) => setData(mod.default))
+      .catch((err) => {
+        console.error('❌ Fehler beim Laden der Datei:', err);
+        setLoadError(true);
+      });
+  }, [level, examSet]);
 
   const handleChange = (questionId, value) => {
     setUserAnswers((prev) => ({ ...prev, [questionId]: value }));
@@ -35,10 +36,10 @@ function GroupedReadingQuiz() {
 
   const handleSubmit = () => {
     setSubmitAttempted(true);
-    if (Object.keys(userAnswers).length < questions.length) return;
+    if (!data || Object.keys(userAnswers).length < data.questions.length) return;
 
     let total = 0;
-    questions.forEach((q) => {
+    data.questions.forEach((q) => {
       if (userAnswers[q.id] === q.answer) total++;
     });
 
@@ -46,22 +47,60 @@ function GroupedReadingQuiz() {
     setShowResults(true);
   };
 
+  if (loadError) {
+    return (
+      <div className="quiz-container">
+        <h2>📄 Kein Lesetext gefunden</h2>
+        <label>
+          Prüfungsset:
+          <select value={examSet} onChange={(e) => setExamSet(e.target.value)} style={{ marginLeft: '0.5rem' }}>
+            <option value="Exam1">Exam 1</option>
+            <option value="Exam2">Exam 2</option>
+            <option value="Exam3">Exam 3</option>
+          </select>
+        </label>
+        <p>Für das Level <strong>{level.toUpperCase()}</strong> wurde kein Lesetext geladen.</p>
+      </div>
+    );
+  }
+
+  if (!data) {
+    return (
+      <div className="quiz-container">
+        <p>⏳ Lade Leseverstehen Teil 2...</p>
+      </div>
+    );
+  }
+
   return (
     <div className="quiz-container">
-      {showResults && score / questions.length >= 0.6 && (
+      {showResults && score / data.questions.length >= 0.6 && (
         <Confetti width={width} height={height} numberOfPieces={250} />
       )}
 
       <h2>Leseverstehen Teil 2</h2>
-      <p className="instructions">Lesen Sie den Text und die Aufgaben 1–5. Welche Lösung  ist jeweils richtig?
-       Markieren Sie Ihre Lösungen für die Aufgaben  auf dem Antwortbogen.</p>
+
+      <label>
+        Prüfungsset:
+        <select value={examSet} onChange={(e) => setExamSet(e.target.value)} style={{ marginLeft: '0.5rem' }}>
+          <option value="Exam1">Exam 1</option>
+          <option value="Exam2">Exam 2</option>
+          <option value="Exam3">Exam 3</option>
+        </select>
+      </label>
+
+      <p className="instructions">
+        Lesen Sie den Text und die Aufgaben 1–5. Welche Lösung ist jeweils richtig?
+        Markieren Sie Ihre Lösungen für die Aufgaben auf dem Antwortbogen.
+      </p>
+
       <div className="reading-text">
-        <p className="title">{readingData.title}</p>
-         <span className="subtitle">{readingData.subtitle}</span>
-        <p>{readingData.text}</p>
+        <p className="title">{data.title}</p>
+        <span className="subtitle">{data.subtitle}</span>
+        <p>{data.text}</p>
       </div>
 
-      {questions.map((q, index) => (
+      {data.questions.map((q, index) => (
         <div key={q.id} className="question-block">
           <p><strong>{index + 1}</strong> {q.question}</p>
 
@@ -87,7 +126,7 @@ function GroupedReadingQuiz() {
             Abschicken
           </button>
 
-          {submitAttempted && Object.keys(userAnswers).length < questions.length && (
+          {submitAttempted && Object.keys(userAnswers).length < data.questions.length && (
             <p style={{ color: 'red', marginTop: '0.5rem', fontSize: '0.95rem' }}>
               ⚠️ Bitte beantworte alle Fragen, bevor du abschickst.
             </p>
@@ -95,9 +134,9 @@ function GroupedReadingQuiz() {
         </div>
       ) : (
         <>
-          <div className={`result-box ${score / questions.length >= 0.6 ? 'result-pass' : 'result-fail'}`}>
-            <h3>Ergebnis: {score} von {questions.length} richtig</h3>
-            <p>{score / questions.length >= 0.6 ? '✅ Bestanden!' : '❌ Nicht bestanden'}</p>
+          <div className={`result-box ${score / data.questions.length >= 0.6 ? 'result-pass' : 'result-fail'}`}>
+            <h3>Ergebnis: {score} von {data.questions.length} richtig</h3>
+            <p>{score / data.questions.length >= 0.6 ? '✅ Bestanden!' : '❌ Nicht bestanden'}</p>
           </div>
           <div className="submit-container">
             <button className="submit-button" onClick={() => {
@@ -105,7 +144,6 @@ function GroupedReadingQuiz() {
               setScore(0);
               setShowResults(false);
               setSubmitAttempted(false);
-              setCurrentPage?.(1); // optional if paginated
             }}>
               🔄 Neu starten
             </button>
@@ -116,4 +154,4 @@ function GroupedReadingQuiz() {
   );
 }
 
-export default GroupedReadingQuiz;
+export default LeseverstehenTeil2;
