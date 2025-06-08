@@ -80,14 +80,13 @@ function LeseverstehenTeil3() {
 
           <h2>Leseverstehen Teil 3</h2>
           <p className="instructions">
-            Lesen Sie die Situationen 1–10 und die Anzeigen a–l. Finden Sie für jede Situation die passende Anzeige.
-            Sie können jede Anzeige nur einmal benutzen. Wenn Sie zu einer Situation keine Anzeige finden, markieren Sie ein X.
+            {data.instruction}
           </p>
 
           {data.situations.map((s, idx) => (
             <div key={s.id} className="question-block-LT3">
               <p className="situation-LT3">
-                <strong>{idx + 1}</strong> {s.text}
+                <strong>{idx + 10}</strong> {s.text}
               </p>
               <label>
                 <select

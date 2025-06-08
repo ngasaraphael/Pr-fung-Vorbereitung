@@ -1,5 +1,5 @@
 import { useNavigate } from 'react-router-dom';
-import { FaBook, FaHeadphones, FaCubes, FaBookOpen, FaPuzzlePiece, FaClipboardList, FaKeyboard, FaTags, FaPenFancy} from "react-icons/fa";
+import { FaRegEnvelope, FaHeadphones, FaBullhorn ,  FaBookOpen, FaVolumeUp, FaPuzzlePiece, FaClipboardList, FaKeyboard, FaTags, FaPenFancy} from "react-icons/fa";
 import '../css/HomePage.css';
 
 function HomePage() {
@@ -46,17 +46,17 @@ function HomePage() {
           </div>
 
           <div className="card" onClick={() => handleNavigate('listening2')}>
-            <FaHeadphones className="card-icon" />
+            <FaVolumeUp className="card-icon" />
             <div>Hörverstehen Teil 2</div>
           </div>
 
           <div className="card" onClick={() => handleNavigate('listening3')}>
-            <FaHeadphones className="card-icon" />
+            <FaBullhorn  className="card-icon" />
             <div>Hörverstehen Teil 3</div>
           </div>
 
           <div className="card" onClick={() => handleNavigate('email')}>
-            <FaPenFancy className="card-icon" />
+            <FaRegEnvelope className="card-icon" />
             <div>Schriftlicher Ausdruck</div>
           </div>
 

@@ -3,42 +3,57 @@
   "id": "reading-b1-002", 
   "level": "b1",
   "type": "grouped-mcq",
-  "title": "Digitalisierung im Alltag",
-  "subtitle": "Wie digitale Tools unser Leben und Arbeiten verändern",
-  "text": "In den letzten Jahren hat die Digitalisierung unser tägliches Leben stark verändert.\nViele Menschen nutzen heute digitale Geräte wie Smartphones, Tablets oder Laptops nicht nur bei der Arbeit,\nsondern auch in ihrer Freizeit. Nachrichten werden online gelesen, Kleidung wird über das Internet bestellt\nund mit Freunden kommuniziert man über soziale Netzwerke. Auch im Gesundheitsbereich hat sich vieles verändert.\nEs gibt Apps, die an die Einnahme von Medikamenten erinnern oder den Blutdruck messen können.\nÄltere Menschen profitieren besonders von diesen digitalen Hilfen, auch wenn sie sich oft erst an die neuen Technologien gewöhnen müssen.\n\nIm Berufsleben ist Digitalisierung nicht mehr wegzudenken. Viele Unternehmen ermöglichen Homeoffice, und Online-Meetings ersetzen oft persönliche Besprechungen. Dokumente werden in der Cloud gespeichert, was die Zusammenarbeit erleichtert.\nAllerdings müssen Arbeitnehmer den sicheren Umgang mit digitalen Tools lernen. Flexibilität und ständige Erreichbarkeit bringen aber auch Stress mit sich. Manche Menschen fühlen sich dadurch überfordert.\n\nEin weiteres wichtiges Thema ist der Datenschutz. Viele Nutzer machen sich Sorgen darüber, wie ihre persönlichen Daten verwendet werden. Deshalb ist es wichtig, über Risiken aufgeklärt zu werden und bewusst mit digitalen Medien umzugehen.\n\nAuch im Bildungsbereich schreitet die Digitalisierung voran. Schulen nutzen digitale Lernplattformen, um den Unterricht zu modernisieren. Schülerinnen und Schüler arbeiten zunehmend mit Tablets und digitalen Materialien.\nDie Digitalisierung bringt viele Chancen, aber auch Herausforderungen mit sich. Sie wird unser Leben auch in Zukunft stark beeinflussen.",
-
+  "instruction":"Lesen Sie den Text und die Aufgaben 6-10. Welche lösung (a, b oder c) ist jeweils richtig? Markieren Sie Ihre lösungen für die Aufgaben 6-10 auf dem Antwortboge",
+  "title": "Büro-Werkstatt: Chance für behinderte Menschen",
+  "subtitle": "Computerarbeit im Auftrag privater Firmen – jeder Dritte findet nach einem fünfmonatigen Kurs einen Job. Interessierte Unternehmen werden noch gesucht.",
+  "text": "Margit, die junge Frau im Rollstuhl, erledigt die Lohnverrechnung für einen Verlag. Reinhard, seit der Geburt gehbehindert, tippt für die Direktion von Hewlett Packard Protokolle und Preislisten. Martin, seine Unterarme sind verkürzt, layoutet die Speisekarte eines Wiener Restaurants.\n\nDrei junge körperbehinderte Menschen am Computer – alle drei können auf eine abgeschlossene kaufmännische Ausbildung verweisen. Dennoch hat man sie auf dem Arbeitsamt als „schwer vermittelbar“ eingestuft – was de facto nicht vermittelbar bedeutet. Zurzeit arbeiten Margit, Reinhard und Martin – gemeinsam mit sieben anderen behinderten Menschen – in der „Büro-Werkstatt“ in Wien-Stadlau. Hier werden körperbehinderte Schulabgänger auf das Berufsleben vorbereitet. In einem fünfmonatigen Kurs lernen sie, das in der Schule Gelernte in die Praxis umzusetzen. Ihre Dienste werden von Privatfirmen (darunter auch die OMV und zwei Banken) zugekauft.\n\nGleichzeitig wird ihnen bei der Jobsuche geholfen. „Leicht ist das nicht“, sagt Betreuer Günther Hos. „Es gibt so viele Arbeitslose, die nicht behindert sind. Wer nimmt schon einen Mitarbeiter mit Handicap?“ Zwar wären die Firmen gesetzlich verpflichtet, pro 25 Beschäftigte einen Behinderten einzustellen. Die meisten Firmen nützen jedoch die Möglichkeit, sich „freizukaufen“ (die sogenannte „Ausgleichstaxe“ beträgt rund 150 Euro monatlich).\n\nTrotz der Rahmenbedingungen kann Hos mit einer durchaus positiven Bilanz aufwarten: „Immerhin haben wir seit der Vereinsgründung vor drei Jahren ein Drittel unserer Leute untergebracht.“ Auch ein Dienst an der Allgemeinheit, denn jede Vermittlung bedeutet: ein Arbeitsloser weniger, ein Steuerzahler mehr.\n\nGegründet wurde die Büro-Werkstatt von einer Lehrerin: Heide Hanisch, die in einer Wiener berufsbildenden Schule Geografie und Geschichte unterrichtet, wollte nicht länger hinnehmen, dass ihre behinderten Schüler erst ausgebildet werden, um dann als Arbeitnehmer nicht gebraucht zu werden.\n\nNähere Informationen, auch für interessierte Firmen: „Büro-Werkstatt“ in Wien-Stadlau, Telefon: 0222/283 85 75.",
   "questions": [
     {
-      "id": "q1",
-      "question": "Was hat unser tägliches Leben stark verändert?",
-      "options": ["Die Politik", "Die Globalisierung", "Die Digitalisierung", "Die Ernährung"],
-      "answer": "Die Digitalisierung"
+      "id": "q6",
+      "question": "In einem fünfmonatigen Kurs können die Teilnehmer",
+      "options": ["eine berufliche Ausbildung abschließen.", "lernen, was sie in der Schule verpasst haben.", "praktische Erfahrungen mit der Büroarbeit sammeln."],
+      "answer": "praktische Erfahrungen mit der Büroarbeit sammeln."
     },
     {
-      "id": "q2",
-      "question": "Was nutzen viele Menschen in ihrer Freizeit?",
-      "options": ["Papier und Stift", "Digitale Geräte", "Bücher", "Zeitungen"],
-      "answer": "Digitale Geräte"
-    },
-
-    {
-      "id": "q7",
-      "question": "Wo werden viele Dokumente gespeichert?",
-      "options": ["Im Büro", "In der Cloud", "In Ordnern", "Auf USB-Sticks"],
-      "answer": "In der Cloud"
-    },
-    {
-      "id": "q8",
-      "question": "Was müssen Arbeitnehmer lernen?",
-      "options": ["Schneller tippen", "Kochen", "Mit digitalen Tools umgehen", "Langsamer sprechen"],
-      "answer": "Mit digitalen Tools umgehen"
-    },
-    {
-      "id": "q9",
-      "question": "Was bringt die ständige Erreichbarkeit mit sich?",
-      "options": ["Motivation", "Erholung", "Stress", "Mehr Freizeit"],
-      "answer": "Stress"
-    }
+    "id": "q7",
+    "question": "In der Büro-Werkstatt versucht man",
+    "options": [
+      "auch jenen Arbeitslosen zu helfen, die nicht behindert sind.",
+      "Behinderte auf die Abschlussprüfungen vorzubereiten.",
+      "für die behinderten Menschen eine Arbeit zu finden."
+    ],
+    "answer": "für die behinderten Menschen eine Arbeit zu finden."
+  },
+  {
+    "id": "q8",
+    "question": "Laut Gesetz müssen österreichische Firmen pro 25 Beschäftigte",
+    "options": [
+      "eine besondere Steuer zahlen.",
+      "einen Behinderten einstellen oder eine monatliche Gebühr bezahlen.",
+      "für jeden Behinderten monatlich 150 Euro bezahlen."
+    ],
+    "answer": "einen Behinderten einstellen oder eine monatliche Gebühr bezahlen."
+  },
+  {
+    "id": "q9",
+    "question": "Seit der Vereinsgründung",
+    "options": [
+      "konnte für ein Drittel der behinderten Kursteilnehmer eine Arbeit gefunden werden.",
+      "konnte Günther Hos für den Verein schon viel Geld sparen.",
+      "zahlen Arbeitslose um ein Drittel weniger Steuern."
+    ],
+    "answer": "konnte für ein Drittel der behinderten Kursteilnehmer eine Arbeit gefunden werden."
+  },
+  {
+   "id": "q10",
+    "question": "Die Lehrerin, die die Büro-Werkstatt gegründet hat,",
+    "options": [
+      "wollte etwas tun, damit Behinderte einen Arbeitsplatz erhalten.",
+      "wollte nicht länger Geografie und Geschichte unterrichten.",
+      "wird nach der Ausbildung der Behinderten nicht mehr gebraucht."
+    ],
+    "answer": "wollte etwas tun, damit Behinderte einen Arbeitsplatz erhalten."
+  }
 
   ]
 }

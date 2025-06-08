@@ -92,8 +92,7 @@ function LeseverstehenTeil2() {
       <h2>Leseverstehen Teil 2</h2> 
 
       <p className="instructions">
-        Lesen Sie den Text und die Aufgaben 1–5. Welche Lösung ist jeweils richtig?
-        Markieren Sie Ihre Lösungen für die Aufgaben auf dem Antwortbogen.
+          {data.instruction}
       </p>
 
       <div className="reading-text">
@@ -104,7 +103,7 @@ function LeseverstehenTeil2() {
 
       {data.questions.map((q, index) => (
         <div key={q.id} className="question-block">
-          <p><strong>{index + 1}</strong> {q.question}</p>
+          <p><strong>{index + 6}</strong> {q.question}</p>
 
           {q.options.map((opt) => (
             <label key={opt} className="option-label">

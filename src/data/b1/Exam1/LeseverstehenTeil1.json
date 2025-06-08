@@ -2,32 +2,33 @@
   "id": "b1-matching-001",
   "level": "b1",
   "type": "matching",
-  "title": "Überschriften zuordnen",
+  "instruction":" Lesen Sie die Überschriften a–j und die Texte 1–5. Finden Sie für jeden Text die passende Überschrift. Sie können jede Überschrift nur einmal benutzen. Markieren Sie Ihre Lösungen für die Aufgaben 1–5 auf dem Antwortbogen.",
+  "title": "Überschriften zuordnen", 
   "paragraphs": [
 
     {
       "id": "p6",
-      "text": "Die Bahn bietet ab sofort spezielle Informationen für Radfahrer an. Neue Broschüren zeigen die besten Verbindungen für Radreisen durch Deutschland.",
+      "text": "Wer ist der typische Computerfan? Das B.A.T. Freizeitforschungsinstitut Hamburg ermittelte einige Eigenschaften: Er ist männlich, jung und hat einen höheren Schulabschluss. Bei der Beschäftigung am heimischen Computer stehen Textverarbeitung und Spiele ganz oben, es folgen private Buchhaltung, Grafikprogramme und Tabellenkalkulation.",
       "correctHeading": "d"
     },
     {
       "id": "p7",
-      "text": "Viele Urlauber entscheiden sich für Fahrradreisen innerhalb Deutschlands. Es gibt zahlreiche Radrouten mit Übernachtungsmöglichkeiten für Familien.",
+      "text": "„Bahn&Bike“ heißt ein 222-seitiger Prospekt, den die Deutsche Bahn AG in Zusammenarbeit mit der Deutschen Zentrale für Tourismus herausgebracht hat und der wichtige Informationen für jene bereitstellt, die ihren Radurlaub mit Bahnfahren verbinden wollen. Das Motto lautet: Hin mit der Bahn – das Rad vor Ort mieten. Der Prospekt enthält Angaben zur Streckenlänge und Wegbeschaffenheit, Adressen von Verleihstationen, verweist auf Sehenswürdigkeiten sowie Unterkünfte und wird durch Karten ergänzt. Die Broschüre kostet 5 Euro und ist im Buchhandel beziehungsweise an Fahrkartenschaltern zu beziehen.",
       "correctHeading": "g"
     },
     {
       "id": "p8",
-      "text": "Kulturveranstaltungen sind bei verschiedenen Altersgruppen unterschiedlich beliebt. Jüngere Menschen besuchen Konzerte, ältere bevorzugen Theater und Museen.",
+      "text": "Ausführliche Informationen zum Thema „Schlafstörungen“ finden Sie im gleichnamigen Patientenratgeber von Dr. med. Fritz Hohagen. Sie erfahren, was den Schlaf stört und was Sie dagegen unternehmen können. Für 9,95 Euro erhalten Sie das Buch in Apotheken oder direkt beim Wort&Bild Verlag, 82065 Baierbrunn.",
       "correctHeading": "h"
     },
     {
       "id": "p9",
-      "text": "In Apotheken gibt es neue Schlaftabletten zu einem besonders günstigen Preis. Die Nachfrage nach solchen Produkten steigt stetig.",
+      "text": "Jetzt wird für Familien Reisen mit der Bahn zwischen Österreich und Deutschland noch ein gutes Stück günstiger. Denn ab 6. Oktober gibt es den Familien-Super-Sparpreis. Ein echter Traumpreis für die ganze Familie – vom Baby bis zum Großpapa – da kann man wirklich sparen. Der Familien-Super-Sparpreis gilt für Familien, bestehend aus ein oder zwei Erwachsenen (Eltern, auch Großeltern) und deren Kindern/Enkelkindern bis zum vollendeten 17. Lebensjahr, wobei mindestens ein Kind/Enkelkind an der Reise teilnehmen muss",
       "correctHeading": "e"
     },
     {
       "id": "p10",
-      "text": "Die Bahn senkt ihre Preise für Familien. Mit einem speziellen Ticketangebot können Kinder kostenlos mitreisen.",
+      "text": "Touristen zwischen 14 und 29 Jahren sowie zwischen 40 und 49 Jahren haben ein besonders großes Interesse an der Kultur des jeweiligen Reiselandes, während die Gruppe der 30- bis 39-jährigen im Urlaub „eine Kulturpause einlegt“. Dies geht aus der neuesten Analyse der Forschungsgemeinschaft Urlaub und Reisen e.V. hervor. Urlauber aus Ostdeutschland, so die Studie, zeigen wiederum mehr Kulturinteresse als Reisende aus dem Westen. Grundsätzlich gelte: Je höher das Einkommen und die Schulbildung sind, umso mehr besteht im Urlaub der Wunsch, Land und Leute kennenzulernen.",
       "correctHeading": "f"
     }
   ],

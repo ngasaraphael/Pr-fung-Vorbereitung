@@ -61,8 +61,7 @@ function SprachbausteineTeil1({ level, examSet, onReady }) {
     <div>
       <h4>{data.title || 'Sprachbausteine Teil 1'}</h4>
       <p className="instructions">
-        Lesen Sie den Text und schließen Sie die Lücken 21–30. Welche Lösung (a, b oder c) ist jeweils richtig?
-        Markieren Sie Ihre Lösungen für die Aufgaben 21–30 auf dem Antwortbogen.
+         {data.instruction}
       </p>
 
       <div className="reading-text" style={{ whiteSpace: 'pre-line', marginBottom: '1.5rem' }}>

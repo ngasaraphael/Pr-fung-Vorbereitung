@@ -50,10 +50,9 @@ function LeseverstehenTeil1({ level, examSet, onReady }) {
 
   return (
     <div>
-      <h4>Leseverstehen Teil 1</h4>
+      <h4>Leseverstehen Teil 1</h4> 
       <p className='instructions'>
-        Lesen Sie die Überschriften a–j und die Texte 1–5. Finden Sie für jeden Text die passende Überschrift.
-        Sie können jede Überschrift nur einmal benutzen.
+         {data.instruction}
       </p>
 
       <div className="matching-headings-MRQ">

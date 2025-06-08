@@ -121,7 +121,7 @@ function SprachbausteineTeil2({ level, examSet, onReady }) {
     <div>
       <h4>{data.title || 'Sprachbausteine Teil 2'}</h4>
       <p className="instructions">
-        Lesen Sie den Text und schließen Sie die Lücken. Benutzen Sie die Buchstaben a–o. Jedes Wort passt nur einmal.
+        {data.instruction}
       </p>
 
       <div className="question-block" style={{ lineHeight: '2' }}>

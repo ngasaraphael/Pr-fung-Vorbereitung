@@ -420,6 +420,7 @@ button:hover {
   box-shadow: 0 0 4px rgba(0,0,0,0.1);
 }
 
+#root > div > div.exam-switcher > label > select,
 #root > div > label > select {
   border: 2px solid #379295;
   border-radius: 6px;

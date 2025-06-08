@@ -52,7 +52,7 @@ function LeseverstehenTeil2({ level, examSet, onReady }) {
       <h4>Leseverstehen Teil 2</h4>
 
       <p className="instructions" style={{ marginBottom: '1rem' }}>
-        Lesen Sie den Text und die Aufgaben 1–5. Welche Lösung ist jeweils richtig?
+        {data.instruction}
       </p>
 
       <div className="reading-text">
@@ -63,7 +63,7 @@ function LeseverstehenTeil2({ level, examSet, onReady }) {
 
       {data.questions.map((q, index) => (
         <div key={q.id} className="question-block">
-          <p><strong>{index + 1}</strong> {q.question}</p>
+          <p><strong>{index + 6}</strong> {q.question}</p>
           {q.options.map((opt) => (
             <label key={opt} className="option-label">
               <input
