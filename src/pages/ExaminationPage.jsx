@@ -12,7 +12,11 @@ import SprachbausteineTeil2 from '../components/SprachbausteineTeil2';
 import HoerverstehenTeil1 from '../components/HoerverstehenTeil1';
 import HoerverstehenTeil2 from '../components/HoerverstehenTeil2';
 import HoerverstehenTeil3 from '../components/HoerverstehenTeil3';
+import MündlicherAusdruckTeil1 from '../components/MündlicherAusdruckTeil1';
 import Email from '../components/Email';
+import ThemaSprechen from '../components/ThemaSprechen';
+import EtwasPlanen from '../components/EtwasPlanen';
+
 
 // Sections
 const sections = [
@@ -25,6 +29,12 @@ const sections = [
   { key: 'HoerverstehenTeil2', label: 'Hörverstehen Teil 2' },
   { key: 'HoerverstehenTeil3', label: 'Hörverstehen Teil 3' },
   { key: 'Email', label: 'Schreiben – E-Mail' },
+  { key: 'MündlicherAusdruckTeil1', label: 'Mündlicher Ausdruck Teil 1' },
+
+  { key: 'ThemaSprechen', label: 'Mündlicher Ausdruck – Thema sprechen' },
+  { key: 'EtwasPlanen', label: 'Mündlich – Gemeinsam planen' },
+
+
 ];
 
 // Component map
@@ -38,6 +48,10 @@ const componentMap = {
   HoerverstehenTeil2,
   HoerverstehenTeil3,
   Email,
+  MündlicherAusdruckTeil1,
+  ThemaSprechen,
+   EtwasPlanen,
+
 };
 
 function ExaminationPage() {

@@ -1,0 +1,22 @@
+{
+  "title": "Teil 2 – Über ein Thema sprechen",
+  "theme": "Gruppenreisen",
+  "instructions": "Sie haben in einer Zeitschrift etwas zum Thema „Gruppenreisen“ gelesen. Berichten Sie Ihrer Gesprächspartnerin/Ihrem Gesprächspartner darüber. Ihre Gesprächspartnerin/Ihr Gesprächspartner hat eine andere Meinung dazu gelesen und berichtet Ihnen auch darüber. Unterhalten Sie sich dann mit Ihrer Gesprächspartnerin/Ihrem Gesprächspartner über das Thema. Sagen Sie Ihre Meinung und erzählen Sie von eigenen Erfahrungen."
+  ,
+  "participants": [
+    {
+      "id": "A",
+      "name": "Sabine Klostermann",
+      "age": 33,
+      "profession": "Bürokauffrau",
+      "quote": "„Ich verreise gern in einer Gruppe. Allein reisen macht mir keinen Spaß. Bei Gruppenreisen kann man neue Leute kennen lernen und hat immer Gesellschaft. Außerdem ist ein Reiseführer dabei, der einem die Sehenswürdigkeiten zeigt.“ "
+    },
+    {
+      "id": "B",
+      "name": "Jens Mühle",
+      "age": 39,
+      "profession": "Physiker",
+      "quote": "Wenn man mit einer Gruppe unterwegs ist, gibt es meist ein festes Programm. Daher reise ich immer allein. Manchmal möchte ich ausschlafen, manchmal etwas besichtigen. Ganz nach Lust und Laune. In einer Gruppe wäre das nicht möglich."
+    }
+  ]
+}

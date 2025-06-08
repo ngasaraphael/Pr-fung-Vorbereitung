@@ -16,6 +16,11 @@ import HoerverstehenTeil2 from './pages/HoerverstehenTeil2';
 import HoerverstehenTeil3 from './pages/HoerverstehenTeil3';
 import ExaminationPage from './pages/ExaminationPage';
 import Email from './pages/Email';
+import ThemaSprechen from './components/ThemaSprechen';
+import EtwasPlanenPage from './pages/EtwasPlanenPage';
+
+
+
 
 
 
@@ -43,6 +48,8 @@ function App() {
           <Route path="/quiz/listening3" element={<HoerverstehenTeil3 />} />
           <Route path="/quiz/email" element={<Email />} />
           <Route path="/exam" element={<ExaminationPage />} />
+          <Route path="/quiz/thema-sprechen" element={<ThemaSprechen />} />
+          <Route path="/quiz/etwas-planen" element={<EtwasPlanenPage />} />
         </Routes>
       </Router>
     </LevelProvider> 
