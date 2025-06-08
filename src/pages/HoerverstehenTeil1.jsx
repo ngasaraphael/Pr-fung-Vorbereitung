@@ -134,23 +134,23 @@ function HoerverstehenTeil1() {
               {answers[q.id] === q.correctAnswer ? '✅ Richtig' : '❌ Falsch'} — Richtige Antwort:{' '}
               <strong>{q.correctAnswer ? 'Richtig' : 'Falsch'}</strong>
             </p>
-          )}
-        </div>
-      ))}
+                )}
+              </div>
+            ))}
 
-      {!showResults ? (
-        <div className="submit-container">
-          <button className="submit-button" onClick={handleSubmit}>Abschicken</button>
-          {submitAttempted && Object.keys(answers).length < data.questions.length && (
-            <p style={{ color: 'red' }}>⚠️ Bitte beantworten Sie alle Fragen.</p>
-          )}
-        </div>
-      ) : (
-        <div className={`result-box ${score / data.questions.length >= 0.6 ? 'result-pass' : 'result-fail'}`}>
-          <h3>Ergebnis: {score} von {data.questions.length} richtig</h3>
-          <p>{score / data.questions.length >= 0.6 ? '✅ Bestanden!' : '❌ Nicht bestanden'}</p>
-        </div>
-      )}
+        {!showResults ? (
+          <div className="submit-container">
+            <button className="submit-button" onClick={handleSubmit}>Abschicken</button>
+            {submitAttempted && Object.keys(answers).length < data.questions.length && (
+              <p style={{ color: 'red' }}>⚠️ Bitte beantworten Sie alle Fragen.</p>
+            )}
+          </div>
+        ) : (
+          <div className={`result-box ${score / data.questions.length >= 0.6 ? 'result-pass' : 'result-fail'}`}>
+            <h3>Ergebnis: {score} von {data.questions.length} richtig</h3>
+            <p>{score / data.questions.length >= 0.6 ? '✅ Bestanden!' : '❌ Nicht bestanden'}</p>
+          </div>
+        )}
     </div>
   );
 }

@@ -50,7 +50,7 @@ function LeseverstehenTeil1() {
   if (data === null) {
     return (
       <div className="quiz-container">
-        <h2>Leseverstehen Teil 1</h2>
+       
         <label>
           Prüfung auswählen:{' '}
           <select value={examSet} onChange={(e) => setExamSet(e.target.value)} style={{ marginLeft: '0.5rem' }}>
@@ -59,6 +59,7 @@ function LeseverstehenTeil1() {
             <option value="Exam3">Prüfung 3</option>
           </select>
         </label>
+         <h2>Leseverstehen Teil 1</h2>
         <p>📦 Keine Aufgaben für Level <strong>{level.toUpperCase()}</strong> und {examSet} verfügbar.</p>
       </div>
     );
@@ -70,17 +71,17 @@ function LeseverstehenTeil1() {
         <Confetti width={width} height={height} numberOfPieces={250} />
       )}
 
-      <h2>Leseverstehen Teil 1</h2>
+
 
       <label>
-        Prüfungsset:
+        Prüfung auswählen
         <select value={examSet} onChange={(e) => setExamSet(e.target.value)} style={{ marginLeft: '0.5rem' }}>
           <option value="Exam1">Prüfung 1</option>
           <option value="Exam2">Prüfung 2</option>
           <option value="Exam3">Prüfung 3</option>
         </select>
       </label>
-
+      <h2>Leseverstehen Teil 1</h2>
       <p className='instructions'>
         Lesen Sie die Überschriften a–j und die Texte 1–5. Finden Sie für jeden Text die passende Überschrift.
         Sie können jede Überschrift nur einmal benutzen.

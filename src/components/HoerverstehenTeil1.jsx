@@ -1,0 +1,99 @@
+// src/components/HoerverstehenTeil1.jsx
+import { useEffect, useState } from 'react';
+import '../css/QuizPage.css';
+
+function HoerverstehenTeil1({ level, examSet, onReady }) {
+  const [data, setData] = useState(null);
+  const [answers, setAnswers] = useState({});
+  const [loadError, setLoadError] = useState(false);
+
+  useEffect(() => {
+    const allFiles = import.meta.glob('../data/*/Exam*/hoerverstehenTeil1.json', { eager: true });
+    const matchPath = Object.keys(allFiles).find(
+      (path) => path.includes(`/${level}/`) && path.includes(`/${examSet}/`)
+    );
+    const file = matchPath ? allFiles[matchPath] : null;
+
+    if (file) {
+      setData(file);
+      setAnswers({});
+      setLoadError(false);
+    } else {
+      setData(null);
+      setLoadError(true);
+    }
+  }, [level, examSet]);
+
+  useEffect(() => {
+    if (!data || !data.questions) return;
+
+    const scoreFn = () => {
+      let score = 0;
+      data.questions.forEach((q) => {
+        if (answers[q.id] === q.correctAnswer) score++;
+      });
+      return { score, total: data.questions.length };
+    };
+
+    onReady(scoreFn, data.questions.length);
+  }, [answers, data, onReady]);
+
+  const handleSelect = (questionId, value) => {
+    setAnswers((prev) => ({ ...prev, [questionId]: value === 'true' }));
+  };
+
+  if (loadError) {
+    return (
+      <div>
+        <h4>Hörverstehen Teil 1</h4>
+        <p style={{ color: 'red' }}>
+          ❌ Keine Datei gefunden für {level.toUpperCase()} – {examSet}
+        </p>
+      </div>
+    );
+  }
+
+  if (!data) {
+    return <p>⏳ Lade Hörverstehen Teil 1 für {level.toUpperCase()} – {examSet}...</p>;
+  }
+
+  return (
+    <div>
+      <h4>{data.title || 'Hörverstehen Teil 1'}</h4>
+      <p className="instructions">{data.instructions}</p>
+
+      {data.questions.map((q, idx) => (
+        <div key={q.id} className="question-block-MRQ">
+          <p><strong>{41 + idx}.</strong> {q.text}</p>
+
+          <div className="radio-group">
+            <label>
+              <input
+                type="radio"
+                name={q.id}
+                value="true"
+                checked={answers[q.id] === true}
+                onChange={(e) => handleSelect(q.id, e.target.value)}
+              />
+              Richtig
+            </label>
+            <label>
+              <input
+                type="radio"
+                name={q.id}
+                value="false"
+                checked={answers[q.id] === false}
+                onChange={(e) => handleSelect(q.id, e.target.value)}
+              />
+              Falsch
+            </label>
+          </div>
+
+          <audio controls src={q.audio} preload="auto" className="HT1_audio" />
+        </div>
+      ))}
+    </div>
+  );
+}
+
+export default HoerverstehenTeil1;

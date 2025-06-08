@@ -50,7 +50,7 @@ function LeseverstehenTeil2() {
   if (loadError) {
     return (
       <div className="quiz-container">
-        <h2>📄 Kein Lesetext gefunden</h2>
+       
         <label>
         rüfung auswählen:{' '}
           <select value={examSet} onChange={(e) => setExamSet(e.target.value)} style={{ marginLeft: '0.5rem' }}>
@@ -59,6 +59,7 @@ function LeseverstehenTeil2() {
             <option value="Exam3">Prüfung 3</option>
           </select>
         </label>
+         <h2>📄 Kein Lesetext gefunden</h2>
         <p>Für das Level <strong>{level.toUpperCase()}</strong> wurde kein Lesetext geladen.</p>
       </div>
     );
@@ -78,16 +79,17 @@ function LeseverstehenTeil2() {
         <Confetti width={width} height={height} numberOfPieces={250} />
       )}
 
-      <h2>Leseverstehen Teil 2</h2>
+     
 
       <label>
-        Prüfungsset:
+        Prüfung auswählen
         <select value={examSet} onChange={(e) => setExamSet(e.target.value)} style={{ marginLeft: '0.5rem' }}>
           <option value="Exam1">Prüfung 1</option>
           <option value="Exam2">Prüfung 2</option>
           <option value="Exam3">Prüfung 3</option>
         </select>
       </label>
+      <h2>Leseverstehen Teil 2</h2> 
 
       <p className="instructions">
         Lesen Sie den Text und die Aufgaben 1–5. Welche Lösung ist jeweils richtig?
